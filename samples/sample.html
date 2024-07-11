@@ -1,0 +1,2038 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>  <title>High Energy Physics - Phenomenology  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/browse/0.3.4/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/browse/0.3.4/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/browse/0.3.4/images/icons/favicon-16x16.png">
+  <link rel="manifest" href="/static/browse/0.3.4/images/icons/site.webmanifest">
+  <link rel="mask-icon" href="/static/browse/0.3.4/images/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" type="text/css" media="screen" href="/static/browse/0.3.4/css/arXiv.css?v=20230622" />
+  <link rel="stylesheet" type="text/css" media="print" href="/static/browse/0.3.4/css/arXiv-print.css?v=20200611" />
+  <link rel="stylesheet" type="text/css" media="screen" href="/static/browse/0.3.4/css/browse_search.css" />
+  <script language="javascript" src="/static/browse/0.3.4/js/accordion.js" /></script>
+  <script src="/static/browse/0.3.4/js/mathjaxToggle.min.js" type="text/javascript"></script>
+  <script type="text/javascript" language="javascript">mathjaxToggle();</script>
+</head>
+
+<body  class="with-cu-identity">
+  
+  <div class="flex-wrap-footer">
+    <header>
+      <a href="#content" class="is-sr-only">Skip to main content</a>
+      <!-- start desktop header -->
+      <div class="columns is-vcentered is-hidden-mobile" id="cu-identity">
+        <div class="column" id="cu-logo">
+          <a href="https://www.cornell.edu/"><img src="/static/browse/0.3.4/images/icons/cu/cornell-reduced-white-SMALL.svg" alt="Cornell University" /></a>
+        </div><div class="column" id="support-ack">
+          <span id="support-ack-url">We gratefully acknowledge support from the Simons Foundation, <a href="https://info.arxiv.org/about/ourmembers.html">member institutions</a>, and all contributors. <a href="https://info.arxiv.org/about/donate.html">Donate</a></span>
+        </div>
+      </div>
+
+      <div id="header" class="is-hidden-mobile">
+<a aria-hidden="true" href="{url_path('ignore_me')}"></a>
+<div class="header-breadcrumbs">
+  <a href="/"><img src="/static/browse/0.3.4/images/arxiv-logo-one-color-white.svg" alt="arxiv logo" style="height:40px;"/></a> <span>&gt;</span>
+  <a href="/list/hep-ph/recent">hep-ph</a>
+  </div>
+          <div class="search-block level-right">
+    <form class="level-item mini-search" method="GET" action="https://arxiv.org/search">
+      <div class="field has-addons">
+        <div class="control">
+          <input class="input is-small" type="text" name="query" placeholder="Search..." aria-label="Search term or terms" />
+          <p class="help"><a href="https://info.arxiv.org/help">Help</a> | <a href="https://arxiv.org/search/advanced">Advanced Search</a></p>
+        </div>
+        <div class="control">
+          <div class="select is-small">
+            <select name="searchtype" aria-label="Field to search">
+              <option value="all" selected="selected">All fields</option>
+              <option value="title">Title</option>
+              <option value="author">Author</option>
+              <option value="abstract">Abstract</option>
+              <option value="comments">Comments</option>
+              <option value="journal_ref">Journal reference</option>
+              <option value="acm_class">ACM classification</option>
+              <option value="msc_class">MSC classification</option>
+              <option value="report_num">Report number</option>
+              <option value="paper_id">arXiv identifier</option>
+              <option value="doi">DOI</option>
+              <option value="orcid">ORCID</option>
+              <option value="author_id">arXiv author ID</option>
+              <option value="help">Help pages</option>
+              <option value="full_text">Full text</option>
+            </select>
+          </div>
+        </div>
+        <input type="hidden" name="source" value="header">
+        <button class="button is-small is-cul-darker">Search</button>
+      </div>
+    </form>
+  </div>
+     </div><!-- /end desktop header -->
+
+      <div class="mobile-header">
+        <div class="columns is-mobile">
+          <div class="column logo-arxiv"><a href="https://arxiv.org/"><img src="/static/browse/0.3.4/images/arxiv-logomark-small-white.svg" alt="arXiv logo" style="height:60px;" /></a></div>
+          <div class="column logo-cornell"><a href="https://www.cornell.edu/">
+            <picture>
+              <source media="(min-width: 501px)"
+                srcset="/static/browse/0.3.4/images/icons/cu/cornell-reduced-white-SMALL.svg  400w"
+                sizes="400w" />
+              <source srcset="/static/browse/0.3.4/images/icons/cu/cornell_seal_simple_black.svg 2x" />
+              <img src="/static/browse/0.3.4/images/icons/cu/cornell-reduced-white-SMALL.svg" alt="Cornell University Logo" />
+            </picture>
+          </a></div>
+          <div class="column nav" id="toggle-container" role="menubar">
+            <button class="toggle-control"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon filter-white"><title>open search</title><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></button>
+            <div class="mobile-toggle-block toggle-target">
+              <form class="mobile-search-form" method="GET" action="https://arxiv.org/search">
+                <div class="field has-addons">
+                  <input class="input" type="text" name="query" placeholder="Search..." aria-label="Search term or terms" />
+                  <input type="hidden" name="source" value="header">
+                  <input type="hidden" name="searchtype" value="all">
+                  <button class="button">GO</button>
+                </div>
+              </form>
+            </div>
+
+            <button class="toggle-control"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon filter-white" role="menu"><title>open navigation menu</title><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/ ></svg></button>
+            <div class="mobile-toggle-block toggle-target">
+              <nav class="mobile-menu" aria-labelledby="mobilemenulabel">
+                <h2 id="mobilemenulabel">quick links</h2>
+                <ul>
+                    <li><a href="https://arxiv.org/login">Login</a></li>
+                    <li><a href="https://info.arxiv.org/help">Help Pages</a></li>
+                    <li><a href="https://info.arxiv.org/about">About</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div><!-- /end mobile-header -->
+    </header>
+
+    <main>
+      <div id="content">
+<div id='content-inner'>
+<div id='dlpage'>
+  <h1>High Energy Physics - Phenomenology</h1>
+
+<ul>
+  <li><a href="#item0">New submissions</a></li>
+  <li><a href="#item22">Cross-lists</a></li>
+  <li><a href="#item31">Replacements</a></li>
+</ul>
+
+<p>See <a id="recent-hep-ph" aria-labelledby="recent-hep-ph" href="/list/hep-ph/recent">recent</a> articles</p>
+
+      <div class='paging'>Total of 60 entries 
+    </div>
+    <div class='morefewer'>Showing up to 2000 entries per page:
+          <a href=/list/hep-ph/new?skip=0&amp;show=1000>
+      fewer</a>
+ |
+          <span style="color: #454545">more</span>
+ |
+          <span style="color: #454545">all</span>
+
+    </div>
+
+
+
+
+      <dl id='articles'>
+    <h3>New submissions for Thursday, 11 July 2024 (showing 21 of 21 entries )</h3>
+
+
+    <dt>
+      <a name='item1'>[1]</a>
+      <a href ="/abs/2407.07139" title="Abstract" id="2407.07139">
+        arXiv:2407.07139
+      </a>
+      
+        [<a href="/pdf/2407.07139" title="Download PDF" id="pdf-2407.07139" aria-labelledby="pdf-2407.07139">pdf</a>, <a href="https://arxiv.org/html/2407.07139v1" title="View HTML" id="html-2407.07139" aria-labelledby="html-2407.07139" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2407.07139" title="Other formats" id="oth-2407.07139" aria-labelledby="oth-2407.07139">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Curved-spacetime dynamics of spin-$\tfrac{1}{2}$ particles in superposed states from a WKB approximation of the Dirac equation
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Hammad,+F">F. Hammad</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Simard,+M">M. Simard</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Saadati,+R">R. Saadati</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Landry,+A">A. Landry</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          16 pages, no figures. Accepted for publication in PRD
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>; General Relativity and Quantum Cosmology (gr-qc)
+        </div>
+
+        <p class='mathjax'>
+          We investigate the dynamics of spin-$\tfrac{1}{2}$ particles that are freely propagating in superposed states in curved spacetime. We first make use of a Wentzel-Kramers-Brillouin approximation of the Dirac equation in curved spacetime to extract the corresponding Mathisson-Papapetrou-Dixon equations that describe the deviation from geodesic motion as well as the spin precession of such particles. We then discuss, in light of our results, the case of flavour neutrinos which are, by nature, a superposition of mass eigenstates.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item2'>[2]</a>
+      <a href ="/abs/2407.07141" title="Abstract" id="2407.07141">
+        arXiv:2407.07141
+      </a>
+      
+        [<a href="/pdf/2407.07141" title="Download PDF" id="pdf-2407.07141" aria-labelledby="pdf-2407.07141">pdf</a>, <a href="https://arxiv.org/html/2407.07141v1" title="View HTML" id="html-2407.07141" aria-labelledby="html-2407.07141" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2407.07141" title="Other formats" id="oth-2407.07141" aria-labelledby="oth-2407.07141">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Nuclear Spin Metrology with Nitrogen Vacancy Center in Diamond for Axion Dark Matter Detection
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Chigusa,+S">So Chigusa</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Hazumi,+M">Masashi Hazumi</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Herbschleb,+E+D">Ernst David Herbschleb</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Matsuzaki,+Y">Yuichiro Matsuzaki</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Mizuochi,+N">Norikazu Mizuochi</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Nakayama,+K">Kazunori Nakayama</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          17 pages, 7 figures
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>; Mesoscale and Nanoscale Physics (cond-mat.mes-hall); High Energy Physics - Experiment (hep-ex); Quantum Physics (quant-ph)
+        </div>
+
+        <p class='mathjax'>
+          We present a method to directly detect the axion dark matter using nitrogen vacancy centers in diamonds. In particular, we use metrology leveraging the nuclear spin of nitrogen to detect axion-nucleus couplings. This is achieved through protocols designed for dark matter searches, which introduce a novel approach of quantum sensing techniques based on the nitrogen vacancy center. Although the coupling strength of the magnetic fields with nuclear spins is three orders of magnitude smaller than that with electron spins for conventional magnetometry, the axion interaction strength with nuclear spins is the same order of magnitude as that with electron spins. Furthermore, we can take advantage of the long coherence time by using the nuclear spins for the axion dark matter detection. We show that our method is sensitive to a broad frequency range $\lesssim 100\,\mathrm{Hz}$ corresponding to the axion mass $m_a \lesssim 4\times 10^{-13}\,\mathrm{eV}$. We present the detection limit of our method for both the axion-neutron and the axion-proton couplings and discuss its significance in comparison with other proposed ideas.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item3'>[3]</a>
+      <a href ="/abs/2407.07142" title="Abstract" id="2407.07142">
+        arXiv:2407.07142
+      </a>
+      
+        [<a href="/pdf/2407.07142" title="Download PDF" id="pdf-2407.07142" aria-labelledby="pdf-2407.07142">pdf</a>, <a href="https://arxiv.org/html/2407.07142v1" title="View HTML" id="html-2407.07142" aria-labelledby="html-2407.07142" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2407.07142" title="Other formats" id="oth-2407.07142" aria-labelledby="oth-2407.07142">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          LANSCE-mQ: Dedicated search for milli/fractionally charged particles at LANL
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Tsai,+Y">Yu-Dai Tsai</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Hwang,+I">Insung Hwang</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Schmitz,+R">Ryan Schmitz</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Citron,+M">Matthew Citron</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Gunthoti,+K">Kranti Gunthoti</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Steenis,+J">Jacob Steenis</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Jeong,+H">Hoyong Jeong</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Moon,+H">Hyunki Moon</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Yoo,+J+H">Jae Hyeok Yoo</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Liu,+M+X">Ming Xiong Liu</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          8 pages, 8 figures
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>; High Energy Physics - Experiment (hep-ex)
+        </div>
+
+        <p class='mathjax'>
+          In this paper, we propose an experiment, LANSCE-mQ, aiming to detect fractionally charged and millicharged particles (mCP) using an 800 MeV proton beam fixed target at the Los Alamos Neutron Science Center (LANSCE) facility. This search can shed new light on numerous fundamental questions, including charge quantization, the predictions of string theories and grand unification theories, the gauge symmetry of the Standard Model, dark sector models, and the tests of cosmic reheating. We propose to install two-layer scintillation detectors made of plastic (such as EJ-200) or CeBr3 to search for mCPs. Dedicated Geant4 detector simulations and in situ measurements have been conducted to obtain a preliminary determination of the background rate. The dominant backgrounds are beam-induced neutrons and coincident dark current signals from the photomultiplier tubes, while beam-induced gammas and cosmic muons are subdominant. We determined that LANSCE-mQ, the dedicated mCP experiment, has the leading mCP sensitivity for mass between ~ 1 MeV to 300 MeV.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item4'>[4]</a>
+      <a href ="/abs/2407.07147" title="Abstract" id="2407.07147">
+        arXiv:2407.07147
+      </a>
+      
+        [<a href="/pdf/2407.07147" title="Download PDF" id="pdf-2407.07147" aria-labelledby="pdf-2407.07147">pdf</a>, <a href="https://arxiv.org/html/2407.07147v1" title="View HTML" id="html-2407.07147" aria-labelledby="html-2407.07147" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2407.07147" title="Other formats" id="oth-2407.07147" aria-labelledby="oth-2407.07147">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Analytical Insights on Hadronic Top Quark Polarimetry
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Dong,+Z">Zhongtian Dong</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Gon%C3%A7alves,+D">Dorival Gonçalves</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Kong,+K">Kyoungchul Kong</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Larkoski,+A+J">Andrew J. Larkoski</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Navarro,+A">Alberto Navarro</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          14 pages and 3 figures
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>; High Energy Physics - Experiment (hep-ex)
+        </div>
+
+        <p class='mathjax'>
+          Top quark polarization provides an important tool for studying its production mechanisms, spin correlations, top quark properties, and new physics searches. Unlike lighter quarks, the top quark&#39;s polarization remains intact until its decay, enabling precise spin measurements. While the down-type fermions from $W$ boson decay are known to be effective spin analyzers, charged leptons have typically been the main target for most analyses. In this paper, we investigate the relevance of global jet dynamics -- considering kinematics, jet charges, and particle multiplicity -- for hadronic top quark polarimetry. The formalism used allows for analytical derivations obtained throughout the manuscript, offering deeper insights into the corresponding phenomenology.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item5'>[5]</a>
+      <a href ="/abs/2407.07158" title="Abstract" id="2407.07158">
+        arXiv:2407.07158
+      </a>
+      
+        [<a href="/pdf/2407.07158" title="Download PDF" id="pdf-2407.07158" aria-labelledby="pdf-2407.07158">pdf</a>, <a href="https://arxiv.org/html/2407.07158v1" title="View HTML" id="html-2407.07158" aria-labelledby="html-2407.07158" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2407.07158" title="Other formats" id="oth-2407.07158" aria-labelledby="oth-2407.07158">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Reducing Complex Phases and other Subtleties of CP Violation
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Bastos,+J+F">José Filipe Bastos</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Silva-Marcos,+J">J.I. Silva-Marcos</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          18 pages
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>
+        </div>
+
+        <p class='mathjax'>
+          When extending the SM, e.g. with vector-like quarks (VLQ), one inevitably encounters more than one CP violating complex phases. In this work, we develop a method useful in reducing the number of complex phases in scenarios with one and two VLQs. We show that these VLQ-models can be described with just one or two physical complex phases respectively and present an explicit alternative parametrization for the quark mixing matrix. Making use of this Reduction of Complex Phases in the case of the Bento-Branco-Parada (BBP) model, i.e. the simplest implementation of the Nelson-Barr solution to the strong CP problem, one also recovers the single phase formulation of BBP model. We comment on how this specific scenario can be distinguished from the general VLQ case with weak-basis invariants
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item6'>[6]</a>
+      <a href ="/abs/2407.07184" title="Abstract" id="2407.07184">
+        arXiv:2407.07184
+      </a>
+      
+        [<a href="/pdf/2407.07184" title="Download PDF" id="pdf-2407.07184" aria-labelledby="pdf-2407.07184">pdf</a>, <a href="https://arxiv.org/html/2407.07184v1" title="View HTML" id="html-2407.07184" aria-labelledby="html-2407.07184" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2407.07184" title="Other formats" id="oth-2407.07184" aria-labelledby="oth-2407.07184">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Towards Beyond Standard Model Model-Building with Reinforcement Learning on Graphs
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Wojcik,+G+N">George N. Wojcik</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Eu,+S+T">Shu Tian Eu</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Everett,+L+L">Lisa L. Everett</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          10 pages, 2 figures, 2 tables
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>; High Energy Physics - Experiment (hep-ex); High Energy Physics - Theory (hep-th)
+        </div>
+
+        <p class='mathjax'>
+          We provide a framework for exploring physics beyond the Standard Model with reinforcement learning using graph representations of new physics theories. The graph structure allows for model-building without a priori specifying definite numbers of new particles. As a case study, we apply our method to a simple class of theories involving vectorlike leptons and a dark U(1) inspired by the portal matter paradigm. Using modern policy gradient methods, the agent successfully explores a model space consisting of both continuous and discrete parameters and identifies consistent theories. The minimal models found include both known and previously unstudied examples that can accommodate the muon anomalous magnetic moment and satisfy precision electroweak and flavor constraints. The method represents a step forward in enabling an automated model-building process for physics beyond the Standard Model.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item7'>[7]</a>
+      <a href ="/abs/2407.07203" title="Abstract" id="2407.07203">
+        arXiv:2407.07203
+      </a>
+      
+        [<a href="/pdf/2407.07203" title="Download PDF" id="pdf-2407.07203" aria-labelledby="pdf-2407.07203">pdf</a>, <a href="https://arxiv.org/html/2407.07203v1" title="View HTML" id="html-2407.07203" aria-labelledby="html-2407.07203" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2407.07203" title="Other formats" id="oth-2407.07203" aria-labelledby="oth-2407.07203">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Graph Reinforcement Learning for Exploring BSM Model Spaces
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Wojcik,+G+N">George N. Wojcik</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Eu,+S+T">Shu Tian Eu</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Everett,+L+L">Lisa L. Everett</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          57 pages, 14 figures, 15 tables
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>; High Energy Physics - Experiment (hep-ex); High Energy Physics - Theory (hep-th)
+        </div>
+
+        <p class='mathjax'>
+          We present a methodology for performing scans of BSM parameter spaces with reinforcement learning (RL). We identify a novel procedure using graph neural networks that is capable of exploring spaces of models without the user specifying a fixed particle content, allowing broad classes of BSM models to be explored. In theory, the technique is applicable to nearly any model space with a pre-specified gauge group. We provide a generic procedure by which a suitable graph grammar can be developed for any BSM model which features user-specified symmetry groups and a finite number of different possible particle species. As a proof of concept, we construct the graph grammar for theories with vector-like leptons that may or may not be charged under a dark U(1) group, inspired by portal matter extensions of the sub-GeV vector portal/kinetic mixing simplified dark matter models. We then use this graph grammar to create a RL environment tasked with creating models with these vector-like leptons that are consistent with a list of a variety of precision observables. The RL agent succeeds in developing models that can address the observed muon anomalous magnetic moment discrepancy while remaining consistent with flavor violation and electroweak precision observables, including both constructions that have previously been studied as well as new models which have not, to our knowledge, previously been identified. By inspecting the resulting ensembles of models that the agent produces and experimenting with different configurations for our RL environment and graph grammar, we also infer various lessons about the development of these environments that can be transferable to RL scans of more complicated model spaces, and comment on future directions for the development of this technique into a more mature tool.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item8'>[8]</a>
+      <a href ="/abs/2407.07210" title="Abstract" id="2407.07210">
+        arXiv:2407.07210
+      </a>
+      
+        [<a href="/pdf/2407.07210" title="Download PDF" id="pdf-2407.07210" aria-labelledby="pdf-2407.07210">pdf</a>, <a href="https://arxiv.org/html/2407.07210v1" title="View HTML" id="html-2407.07210" aria-labelledby="html-2407.07210" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2407.07210" title="Other formats" id="oth-2407.07210" aria-labelledby="oth-2407.07210">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Estimating centrality in heavy-ion collisions using Transfer Learning technique
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Basak,+D">Dipankar Basak</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Dey,+K">Kalyan Dey</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          14 pages, 10 figures
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>; Nuclear Theory (nucl-th)
+        </div>
+
+        <p class='mathjax'>
+          In this study, we explore the applicability of Transfer Learning techniques for estimating collision centrality in terms of the number of participants ($N_{\rm part}$) in high-energy heavy-ion collisions. In the present work, we leverage popular pre-trained CNN models such as VGG16, ResNet50, and DenseNet121 to determine $N_{\rm part}$ in Au+Au collisions at $\sqrt{s}=200$ GeV on an event-by-event basis. Remarkably, all three models achieved good performance despite the pre-trained models being trained for databases of other domains. Particularly noteworthy is the superior performance of the VGG16 model, showcasing the potential of transfer learning techniques for extracting diverse observables from heavy-ion collision data.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item9'>[9]</a>
+      <a href ="/abs/2407.07215" title="Abstract" id="2407.07215">
+        arXiv:2407.07215
+      </a>
+      
+        [<a href="/pdf/2407.07215" title="Download PDF" id="pdf-2407.07215" aria-labelledby="pdf-2407.07215">pdf</a>, <a href="https://arxiv.org/html/2407.07215v1" title="View HTML" id="html-2407.07215" aria-labelledby="html-2407.07215" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2407.07215" title="Other formats" id="oth-2407.07215" aria-labelledby="oth-2407.07215">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          New constraints on CPT symmetry violation in charm mesons
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Krzemien,+W">Wojciech Krzemien</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Kmiec,+M">Mateusz Kmiec</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Szabelski,+A">Adam Szabelski</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Wislicki,+W">Wojciech Wislicki</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          8 pages, 4 figures
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>
+        </div>
+
+        <p class='mathjax'>
+          Small CPT-violating effects are admissible in several theories beyond the Standard Model of interactions. We analyse experimental data obtained with neutral flavoured meson mixing and place bounds on the scale of such phenomena. The constraints on the CPT-violating parameter $z$ are derived by reinterpreting the LHCb measurement of the time-dependent asymmetry in the Cabbibo-favoured $D^0 \rightarrow K^{-}\pi^{+}$ and $\bar{D}^0 \rightarrow K^{+}\pi^{-}$ decay rates. The bounds provided in this paper are two orders of magnitude stricter compared to the results obtained by the FOCUS Collaboration. Among other constraints, we report bounds on the difference in the decay widths and masses of the neutral D meson flavour states at a 95 % confidence level. The decay width difference is bounded by $(-4.7&lt;\delta\Gamma_D&lt;2.1)\times 10^{-16}$GeV. The mass difference lies within~$(-2.0&lt;\delta m_D&lt;2.0)\times 10^{-15}$GeV for 95% of $\text{arg}(z)$ values. The paper includes an assessment of the influence of CP violation on the results and a discussion of the future prospects.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item10'>[10]</a>
+      <a href ="/abs/2407.07247" title="Abstract" id="2407.07247">
+        arXiv:2407.07247
+      </a>
+      
+        [<a href="/pdf/2407.07247" title="Download PDF" id="pdf-2407.07247" aria-labelledby="pdf-2407.07247">pdf</a>, <a href="https://arxiv.org/html/2407.07247v1" title="View HTML" id="html-2407.07247" aria-labelledby="html-2407.07247" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2407.07247" title="Other formats" id="oth-2407.07247" aria-labelledby="oth-2407.07247">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Advances at the $\gamma_5$-Frontier
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=K%C3%BChler,+P">Paul Kühler</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=St%C3%B6ckinger,+D">Dominik Stöckinger</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Wei%C3%9Fwange,+M">Matthias Weißwange</a></div>
+
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>
+        </div>
+
+        <p class='mathjax'>
+          These proceedings discuss the current progress of the no-compromise approach to the dimensional renormalization of chiral gauge theories in the context of the BMHV scheme with non-anticommuting $\gamma_5$. Despite spuriously breaking BRST-invariance in intermediate steps, it is the only scheme which handles the well-known $\gamma_5$-problem mathematically consistently. We begin with a brief motivation, followed by an exposition of our methodology. Specifically, we illustrate the symmetry restoration procedure to obtain the required symmetry-restoring counterterms and provide insights into our computational setups, including recent developments. Building up on this, we present recent results and advances for the multi-loop renormalization of Abelian and non-Abelian chiral gauge theories, before concluding this article with a discussion on prospective implementations of the BMHV regularization in SM-like models.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item11'>[11]</a>
+      <a href ="/abs/2407.07431" title="Abstract" id="2407.07431">
+        arXiv:2407.07431
+      </a>
+      
+        [<a href="/pdf/2407.07431" title="Download PDF" id="pdf-2407.07431" aria-labelledby="pdf-2407.07431">pdf</a>, <a href="https://arxiv.org/html/2407.07431v1" title="View HTML" id="html-2407.07431" aria-labelledby="html-2407.07431" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2407.07431" title="Other formats" id="oth-2407.07431" aria-labelledby="oth-2407.07431">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Light-cone sum rules study on the purely non-factorizable $\Lambda_{c}^{+}\to\Xi^{0}K^{+}$ decay
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Shi,+Y">Yu-Ji Shi</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Zhao,+Z">Zhen-Xing Zhao</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          13 pages, 6 figures, 3 tables
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>; High Energy Physics - Experiment (hep-ex)
+        </div>
+
+        <p class='mathjax'>
+          We investigate the purely non-factorizable $\Lambda_{c}^{+}\to\Xi^{0}K^{+}$ decay using light-cone sum rules. A three-point correlation is defined and calculated respectively at hadron and quark-gluon level to extract the decay amplitudes. Both the W-exchange and the W-inward emission diagrams are considered in the quark-gluon level calculation, where the two-particle light-cone distribution amplitudes (LCDAs) of kaon are used as non-perturbative input. We obtain the decay amplitudes contributed from the twist-2 and twist-3 kaon LCDAs, respectively. The obtained S-wave amplitude is consistent with those predicted in the literature, while the obtained P-wave amplitude is much larger. The significant difference between the S- and P- wave amplitudes leads to a relatively smaller but positive up-down spin asymmetry.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item12'>[12]</a>
+      <a href ="/abs/2407.07437" title="Abstract" id="2407.07437">
+        arXiv:2407.07437
+      </a>
+      
+        [<a href="/pdf/2407.07437" title="Download PDF" id="pdf-2407.07437" aria-labelledby="pdf-2407.07437">pdf</a>, <a href="https://arxiv.org/html/2407.07437v1" title="View HTML" id="html-2407.07437" aria-labelledby="html-2407.07437" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2407.07437" title="Other formats" id="oth-2407.07437" aria-labelledby="oth-2407.07437">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Radiative symmetry breaking from the on-shell perspective
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Sojka,+B">Bartosz Sojka</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Swiezewska,+B">Bogumila Swiezewska</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          9 pages + references, 1 figure
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>; Cosmology and Nongalactic Astrophysics (astro-ph.CO); High Energy Physics - Theory (hep-th)
+        </div>
+
+        <p class='mathjax'>
+          Models with classical scale symmetry, which feature radiative symmetry breaking, generically lead to a supercooled first-order phase transition in the early Universe resulting in a strong gravitational-wave signal, potentially observable by LISA. This is thanks to the absence of mass terms in the potential and the resulting logarithmic structure of the zero-temperature effective potential. It is known that imposing a symmetry at classical level does not prohibit breaking it by quantum corrections. In the case of scale symmetry, a mass term can in principle appear through renormalisation. This is not the case in the commonly used $\overline{\mathrm{MS}}$ or Coleman-Weinberg schemes. In this work, we renormalise a scale-invariant model in the on-shell scheme to check whether parameterising it with the physical masses will introduce mass terms to the potential. We find that indeed mass terms appear for an arbitrary choice of the physical masses. However, we formulate an on-shell condition for radiative symmetry breaking, sufficient and necessary for the cancellation of mass terms in the renormalised potential, yielding a logarithmic potential needed for supercooled phase transitions.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item13'>[13]</a>
+      <a href ="/abs/2407.07512" title="Abstract" id="2407.07512">
+        arXiv:2407.07512
+      </a>
+      
+        [<a href="/pdf/2407.07512" title="Download PDF" id="pdf-2407.07512" aria-labelledby="pdf-2407.07512">pdf</a>, <a href="https://arxiv.org/html/2407.07512v1" title="View HTML" id="html-2407.07512" aria-labelledby="html-2407.07512" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2407.07512" title="Other formats" id="oth-2407.07512" aria-labelledby="oth-2407.07512">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Refactorisation and Subtraction
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Magnea,+L">Lorenzo Magnea</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Milloy,+C">Calum Milloy</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Signorile-Signorile,+C">Chiara Signorile-Signorile</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Torrielli,+P">Paolo Torrielli</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          10 pages. Contribution to the Proceedings of the Loops and Legs in Quantum Field Theory conference (LL2024)
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>
+        </div>
+
+        <p class='mathjax'>
+          Infrared subtraction algorithms beyond next-to-leading order necessitate the analysis of multiple infrared limits of scattering amplitudes, where several particles sequentially become soft or collinear. In this contribution, we report on the study performed in <a href="https://arxiv.org/abs/2403.11975" data-arxiv-id="2403.11975" class="link-https">arXiv:2403.11975</a>, which investigates these limits from the perspective of infrared factorisation, offering general definitions for strongly-ordered soft and collinear kernels, expressed in terms of gauge-invariant operator matrix elements. These definitions facilitate the identification of local subtraction counterterms for strongly-ordered configurations, whose integrals are designed to cancel the IR poles of real-virtual counterterms. This framework is validated at tree level for multiple emissions, and at one loop for single and double emissions.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item14'>[14]</a>
+      <a href ="/abs/2407.07529" title="Abstract" id="2407.07529">
+        arXiv:2407.07529
+      </a>
+      
+        [<a href="/pdf/2407.07529" title="Download PDF" id="pdf-2407.07529" aria-labelledby="pdf-2407.07529">pdf</a>, <a href="https://arxiv.org/html/2407.07529v1" title="View HTML" id="html-2407.07529" aria-labelledby="html-2407.07529" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2407.07529" title="Other formats" id="oth-2407.07529" aria-labelledby="oth-2407.07529">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Kaluza-Klein Graviton Freeze-In and Big Bang Nucleosynthesis
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Gross,+M">Mathieu Gross</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Hooper,+D">Dan Hooper</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          12 pages, 6 figures
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>; Cosmology and Nongalactic Astrophysics (astro-ph.CO)
+        </div>
+
+        <p class='mathjax'>
+          In models featuring extra spatial dimensions, particle collisions in the early universe can produce Kaluza-Klein gravitons. Such particles will later decay, potentially impacting the process of Big Bang nucleosynthesis. In this paper, we consider scenarios in which gravity is free to propagate throughout $n$ flat, compactified extra dimensions, while the fields of the Standard Model are confined to a 3+1 dimensional brane. We calculate the production and decay rates of the states that make up the Kaluza-Klein graviton tower and determine the evolution of their abundances in the early universe. We then go on to evaluate the impact of these decays on the resulting light element abundances. We identify significant regions of previously unexplored parameter space that are inconsistent with measurements of the primordial helium and deuterium abundances. In particular, we find that for the case of one extra dimension (two extra dimensions), the fundamental scale of gravity must be $M_{\star} &gt; 2 \times 10^{13} \, {\rm GeV}$ ($M_{\star} &gt; 10^{10} \, {\rm GeV}$) unless the temperature of the early universe was never greater than $T \sim 2 \, {\rm TeV}$ ($T \sim 1 \, {\rm GeV}$). For larger values of $n$, these constraints are less stringent. For the case of $n=6$, for example, our analysis excludes all values of $M_{\star}$ less than $\sim 10^{6} \, {\rm GeV}$, unless the temperature of the universe was never greater than $T \sim 3 \, {\rm TeV}$. The results presented here severely limit the possibility that black holes were efficiently produced through particle collisions in the early universe&#39;s thermal bath.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item15'>[15]</a>
+      <a href ="/abs/2407.07623" title="Abstract" id="2407.07623">
+        arXiv:2407.07623
+      </a>
+      
+        [<a href="/pdf/2407.07623" title="Download PDF" id="pdf-2407.07623" aria-labelledby="pdf-2407.07623">pdf</a>, <a href="/format/2407.07623" title="Other formats" id="oth-2407.07623" aria-labelledby="oth-2407.07623">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Time-Like Heavy-Flavour Thresholds for Fragmentation Functions: the Light-Quark Matching Condition at NNLO
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Biello,+C">Christian Biello</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Bonino,+L">Leonardo Bonino</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          15 pages, 3 figures, ancillary file with analytical results
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>
+        </div>
+
+        <p class='mathjax'>
+          Matching conditions are universal ingredients that describe how fragmentation functions change when heavy-flavour thresholds are crossed during the factorisation scale evolution. They are the last missing piece for a consistent description of observables with identified final-state hadrons at next-to-next-to leading order accuracy in quantum chromodynamics. We present an analytical form of the matching condition for light-flavour to hadron fragmentation function at next-to-next-to leading order. The derivation is performed by extending the formalism employed in the extraction of the next-to leading order matching conditions to the subsequent order, making use of $e^+e^-$ annihilation cross sections. We obtain the first non-trivial heavy-quark effect in the light-quark fragmentation functions and provide results in Mellin space.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item16'>[16]</a>
+      <a href ="/abs/2407.07661" title="Abstract" id="2407.07661">
+        arXiv:2407.07661
+      </a>
+      
+        [<a href="/pdf/2407.07661" title="Download PDF" id="pdf-2407.07661" aria-labelledby="pdf-2407.07661">pdf</a>, <a href="https://arxiv.org/html/2407.07661v1" title="View HTML" id="html-2407.07661" aria-labelledby="html-2407.07661" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2407.07661" title="Other formats" id="oth-2407.07661" aria-labelledby="oth-2407.07661">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Confirming the glueball-like particle $X(2370)$ productions in $e^+e^-$ collisions at BESIII energy with PACIAE model
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=She,+Z">Zhi-Lei She</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Lei,+A">An-Ke Lei</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Zhang,+W">Wen-Chao Zhang</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Yan,+Y">Yu-Liang Yan</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Zhou,+D">Dai-Mei Zhou</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Zheng,+H">Hua Zheng</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Sa,+B">Ben-Hao Sa</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          4 pages, 2 figures
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>
+        </div>
+
+        <p class='mathjax'>
+          The parton and hadron cascade model {\footnotesize PACIAE} is employed to confirm the BESIII newest observation of glueball-like particle $\rm X(2370)$ production in $e^+e^-$ collisions at $\sqrt{s}=4.95\,\mathrm{GeV}$. We coalesce the $\rm X(2370)$ glueball state with two gluons in the simulated partonic final state by the Dynamically Constrained Phase-space Coalescence ({\footnotesize DCPC}) model. Alternative configuration of $\rm X(2370)$ molecular state is recombined in the simulated hadronic final state with $\pi^{+},\pi^{-},K^{+}, K^{-},K_{S}^{0},K_{S}^{0}$ and $\eta&#39;$ by {\footnotesize DCPC} model. The resulted particle transverse momentum spectrum and rapidity distribution, etc. show a significant discrepancy between the two states. They are not only serving as criteria to distinguish the $\rm X(2370)$ glueball state or molecular state, but also confirming the BESIII observation of glueball-like particle $\rm X(2370)$ productions in $e^+e^-$ collisions.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item17'>[17]</a>
+      <a href ="/abs/2407.07706" title="Abstract" id="2407.07706">
+        arXiv:2407.07706
+      </a>
+      
+        [<a href="/pdf/2407.07706" title="Download PDF" id="pdf-2407.07706" aria-labelledby="pdf-2407.07706">pdf</a>, <a href="https://arxiv.org/html/2407.07706v1" title="View HTML" id="html-2407.07706" aria-labelledby="html-2407.07706" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2407.07706" title="Other formats" id="oth-2407.07706" aria-labelledby="oth-2407.07706">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Quark spin effects in $e^+e^-$ annihilation: a Monte Carlo event generator study
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Kerbizi,+A">A. Kerbizi</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=L%C3%B6nnblad,+L">L. Lönnblad</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Martin,+A">A. Martin</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          15 pages, 14 figures
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>
+        </div>
+
+        <p class='mathjax'>
+          Quark spin effects in $e^+e^-$ annihilation to pseudoscalar and vector mesons are implemented for the first time in the PYTHIA Monte Carlo event generator. The spin-dependent fragmentation of the string stretched between the produced quark-antiquark pair with correlated spin states is described by the string+${}^3P_0$ model implemented in the string fragmentation routine of PYTHIA by using the StringSpinner package. The simulated events are used to study the model predictions for the Collins asymmetries of mesons produced back-to-back in the $e^+e^-$ center of mass system by using both the thrust axis method and the hadronic plane method. The obtained asymmetries are compared to the available data from the BELLE and BABAR experiments and the underlying Collins analysing power from the string+${}^3P_0$ model is compared with phenomenological extractions.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item18'>[18]</a>
+      <a href ="/abs/2407.07776" title="Abstract" id="2407.07776">
+        arXiv:2407.07776
+      </a>
+      
+        [<a href="/pdf/2407.07776" title="Download PDF" id="pdf-2407.07776" aria-labelledby="pdf-2407.07776">pdf</a>, <a href="https://arxiv.org/html/2407.07776v1" title="View HTML" id="html-2407.07776" aria-labelledby="html-2407.07776" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2407.07776" title="Other formats" id="oth-2407.07776" aria-labelledby="oth-2407.07776">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Diphoton signals for the Georgi-Machacek scenario at the Large Hadron Collider
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Bhattacharya,+S">Satyaki Bhattacharya</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Ghosh,+R">Rituparna Ghosh</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Mukhopadhyaya,+B">Biswarup Mukhopadhyaya</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          30 pages, 5 figures, 3 tables
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>
+        </div>
+
+        <p class='mathjax'>
+          The diphoton channel for exploring the Georgi-Machacek (GM) scenario containing scalar triplets at the Large Hadron Collider (LHC) has been identified as germane, and subjected to a detailed study. The scalar spectrum of the model, which imposes a custodial SU(2) on the potential, gets classified into a 5-plet, a 3-plet and two singlets under the custodial symmetry. While most attempts to probe or constrain the scenario at the LHC depend largely on signals of charged scalars, we point out that the custodial SU(2) singlet state H can have a substantial branching ratio (amounting to a few per cent) into two photons. We carry out a detailed simulation of the resulting signal and the standard model backgrounds, obtaining the signal significance in different regions of the parameter space using the profile likelihood ratio method. Substantial regions of the GM parameter space is thus shown to be accessible to LHC studies, both at the high-luminosity run with $\int {\cal L} dt = 3000 fb^{-1}$, and also in Run-3 with $\int {\cal L} dt = 300 fb^{-1}$, even after folding in systematic errors.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item19'>[19]</a>
+      <a href ="/abs/2407.07813" title="Abstract" id="2407.07813">
+        arXiv:2407.07813
+      </a>
+      
+        [<a href="/pdf/2407.07813" title="Download PDF" id="pdf-2407.07813" aria-labelledby="pdf-2407.07813">pdf</a>, <a href="https://arxiv.org/html/2407.07813v1" title="View HTML" id="html-2407.07813" aria-labelledby="html-2407.07813" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2407.07813" title="Other formats" id="oth-2407.07813" aria-labelledby="oth-2407.07813">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Dispersive determination of the fourth generation lepton masses
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Li,+H">Hsiang-nan Li</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          16 pages, 2 figures
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>; High Energy Physics - Experiment (hep-ex)
+        </div>
+
+        <p class='mathjax'>
+          We continue our previous determination of the masses of the sequential fourth generation quarks in an extension of the Standard Model, and predict the mass $m_4$ ($m_L$) of the fourth generation neutrino $\nu_4$ (charged lepton $L$) by solving the dispersion relation associated with heavy fermion decays. The results $m_4\approx 170$ GeV and $m_L\approx 270$ GeVare extracted from the dispersive analyses of the $t\to d e^+\nu_4$ and $L^-\to \nu_1 \bar t d$ decay widths, respectively, where $t$ ($d$, $e^+$, $\nu_1$) denotes a top quark (down quark, positron, light neutrino). The predictions are then cross-checked by examining the $L^-\to \nu_4 \bar u d$ decay, $\bar u$ being an anti-up quark. It is shown that the fourth generation leptons with the above masses survive the current experimental bounds from Higgs boson decays into photon pairs and from the oblique parameters. We also revisit how the existence of the fourth generation leptons impacts the dispersive constraints on the neutrino masses and the Pontecorvo-Maki-Nakagawa-Sakata (PMNS) matrix elements. It is found that the unitarity of the $3\times 3$ PMNS matrix holds well up to corrections of $O(m_\nu^2/m_W^2)$, $m_\nu$ ($m_W$) being a light neutrino (the $W$ boson) mass, whose mixing angles and $CP$ phase prefer the values $\theta_{12}\approx 34^\circ$, $\theta_{23}\approx 46^\circ$, $\theta_{13}\approx 4^\circ$ and $\delta\approx 235^\circ$ in the normal-ordering scenario for neutrino masses. On the contrary, the unitarity of the $3\times 3$ Cabibbo-Kobayashi-Maskawa matrix is violated at the level $m_b^2/m_W^2\sim 10^{-3}$, $m_b$ being the $b$ quark mass, as the same formalism is applied to the quark mixing.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item20'>[20]</a>
+      <a href ="/abs/2407.07828" title="Abstract" id="2407.07828">
+        arXiv:2407.07828
+      </a>
+      
+        [<a href="/pdf/2407.07828" title="Download PDF" id="pdf-2407.07828" aria-labelledby="pdf-2407.07828">pdf</a>, <a href="https://arxiv.org/html/2407.07828v1" title="View HTML" id="html-2407.07828" aria-labelledby="html-2407.07828" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2407.07828" title="Other formats" id="oth-2407.07828" aria-labelledby="oth-2407.07828">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Inhibition of splitting of the chiral and deconfinement transition due to rotation in QCD: the phase diagram of linear sigma model coupled to Polyakov loop
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Singha,+P">Pracheta Singha</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Ambrus,+V+E">Victor E. Ambrus</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Chernodub,+M+N">Maxim N. Chernodub</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          16 pages, 8 figures
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>; High Energy Physics - Lattice (hep-lat); High Energy Physics - Theory (hep-th); Nuclear Theory (nucl-th)
+        </div>
+
+        <p class='mathjax'>
+          We discuss the effect of rigid rotation on critical temperatures of deconfinement and chiral transitions in the linear sigma model coupled to quarks and the Polyakov loop. We point out the essential role of the causality condition, which requires that any point of the system should rotate slower than the velocity of light. We show that imposing this physical requirement leads to inhibition of the splitting between the chiral and confining transitions, which becomes negligibly small ($\Delta T \sim 1$~MeV or less) for experimentally relevant, slow angular velocities $\Omega \sim 10$~MeV of a $(5-10)$~fm-sized systems. Moreover, the boundedness of the system has a much bigger effect on temperature splitting than the rotation itself: the splitting reaches 10~MeV in a small, one-fermi-sized non-rotating system. The temperature splitting may, however, become enhanced in an academic limit of ultra-relativistic regimes when the boundary of the system rotates at near-to-light velocities.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item21'>[21]</a>
+      <a href ="/abs/2407.07836" title="Abstract" id="2407.07836">
+        arXiv:2407.07836
+      </a>
+      
+        [<a href="/pdf/2407.07836" title="Download PDF" id="pdf-2407.07836" aria-labelledby="pdf-2407.07836">pdf</a>, <a href="https://arxiv.org/html/2407.07836v1" title="View HTML" id="html-2407.07836" aria-labelledby="html-2407.07836" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2407.07836" title="Other formats" id="oth-2407.07836" aria-labelledby="oth-2407.07836">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Equivalence of two component spinor mechanism and four component spinor mechanism in top quark pair production
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Deo,+M">Malvika Deo</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Misra,+A">Anuradha Misra</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Subramaniam,+S">Sharada Subramaniam</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Vinze,+R">Radhika Vinze</a></div>
+
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>; High Energy Physics - Theory (hep-th)
+        </div>
+
+        <p class='mathjax'>
+          In this article, we calculate the $S$-matrix elements for the process $e^{+} e^{-}\rightarrow t \bar{t}$ mediated by SM photon, $Z$ boson and an additional $Z^{&#39;}$ boson indicating the contribution from new physics. We calculate the amplitude square using two component spinor formalism and four component spinor formalism and show the equivalence of the results using the two formalisms. We also establish the relations between the couplings of $Z^{&#39;}$ boson to fermions in the two component spinor formalism and four component spinor formalism.
+        </p>
+      </div>
+    </dd>
+</dl>
+
+      <dl id='articles'>
+    <h3>Cross submissions for Thursday, 11 July 2024 (showing 9 of 9 entries )</h3>
+
+
+    <dt>
+      <a name='item22'>[22]</a>
+      <a href ="/abs/2407.06578" title="Abstract" id="2407.06578">
+        arXiv:2407.06578
+      </a>
+          (cross-list from hep-lat)
+
+        [<a href="/pdf/2407.06578" title="Download PDF" id="pdf-2407.06578" aria-labelledby="pdf-2407.06578">pdf</a>, <a href="https://arxiv.org/html/2407.06578v1" title="View HTML" id="html-2407.06578" aria-labelledby="html-2407.06578" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2407.06578" title="Other formats" id="oth-2407.06578" aria-labelledby="oth-2407.06578">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          QCD with (2+1) flavors at the physical point in external chromomagnetic fields
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-lat?searchtype=author&amp;query=Cea,+P">Paolo Cea</a>, <a href="https://arxiv.org/search/hep-lat?searchtype=author&amp;query=Cosmai,+L">Leonardo Cosmai</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          28 pages, 9 figures, 3 tables
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Lattice (hep-lat)</span>; High Energy Physics - Experiment (hep-ex); High Energy Physics - Phenomenology (hep-ph)
+        </div>
+
+        <p class='mathjax'>
+          We investigate full QCD with (2+1)-flavour of HISQ fermions at the physical point in the presence of uniform Abelian chromomagnetic background fields. Our focus is on the renormalized light and strange chiral condensate around the pseudo-critical temperature. We find that in the confined region the gauge system is subjected to the chromomagnetic catalysis that turns into the inverse catalysis in the high-temperature regime. We further observe that the chiral condensates are subjected to the so-called thermal hysteresis. Our estimate of the deconfinement temperature indicates that the critical temperature begins to decrease
+<br>in the small field region, soon after it seems to saturate and finally increase with the strength of the chromomagnetic field.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item23'>[23]</a>
+      <a href ="/abs/2407.07143" title="Abstract" id="2407.07143">
+        arXiv:2407.07143
+      </a>
+          (cross-list from hep-th)
+
+        [<a href="/pdf/2407.07143" title="Download PDF" id="pdf-2407.07143" aria-labelledby="pdf-2407.07143">pdf</a>, <a href="https://arxiv.org/html/2407.07143v1" title="View HTML" id="html-2407.07143" aria-labelledby="html-2407.07143" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2407.07143" title="Other formats" id="oth-2407.07143" aria-labelledby="oth-2407.07143">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          QCD Axion Dark Matter in String Theory: Haloscopes and Helioscopes as Probes of the Landscape
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-th?searchtype=author&amp;query=Gendler,+N">Naomi Gendler</a>, <a href="https://arxiv.org/search/hep-th?searchtype=author&amp;query=Marsh,+D+J+E">David J. E. Marsh</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          8 pages, 5 figures
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Theory (hep-th)</span>; High Energy Physics - Phenomenology (hep-ph)
+        </div>
+
+        <p class='mathjax'>
+          Laboratory experiments have the capacity to detect the QCD axion in the next decade, and precisely measure its mass, if it composes the majority of the dark matter. In type IIB string theory on Calabi-Yau threefolds in the geometric regime, the QCD axion mass, $m_a$, is strongly correlated with the topological Hodge number $h^{1,1}$. We compute $m_a$ in a scan of $185{,}965$ compactifications of type IIB string theory on toric hypersurface Calabi-Yau threefolds. We compute the range of $h^{1,1}$ probed by different experiments under the condition that the QCD axion can provide the observed dark matter density with minimal fine-tuning. Taking the experiments DMRadio, ADMX, MADMAX, and BREAD as indicative on different mass ranges, the $h^{1,1}$ distributions peak near $h^{1,1}=24.9, \ 65.4, \ 196.8,$ and $310.9,$ respectively. We furthermore conclude that, without severe fine tuning, detection of the QCD axion as dark matter \emph{at any mass} disfavours 80% of models with $h^{1,1} =491$, which is thought to have the most known Calabi-Yau threefolds. Measurement of the solar axion mass with IAXO is the dominant probe of all models with $h^{1,1}\gtrsim 250$. This study demonstrates the immense importance of axion detection in experimentally constraining the string landscape.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item24'>[24]</a>
+      <a href ="/abs/2407.07169" title="Abstract" id="2407.07169">
+        arXiv:2407.07169
+      </a>
+          (cross-list from astro-ph.GA)
+
+        [<a href="/pdf/2407.07169" title="Download PDF" id="pdf-2407.07169" aria-labelledby="pdf-2407.07169">pdf</a>, <a href="https://arxiv.org/html/2407.07169v1" title="View HTML" id="html-2407.07169" aria-labelledby="html-2407.07169" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2407.07169" title="Other formats" id="oth-2407.07169" aria-labelledby="oth-2407.07169">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Unraveling the role of merger histories in the population of Insitu stars: linking IllustrisTNG cosmological simulation to H3 survey
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Emami,+R">Razieh Emami</a>, <a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Hernquist,+L">Lars Hernquist</a>, <a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Smith,+R">Randall Smith</a>, <a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Steiner,+J+F">James F. Steiner</a>, <a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Tremblay,+G">Grant Tremblay</a>, <a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Finkbeiner,+D">Douglas Finkbeiner</a>, <a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Vogelsberger,+M">Mark Vogelsberger</a>, <a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Grindlay,+J">Josh Grindlay</a>, <a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Marinacci,+F">Federico Marinacci</a>, <a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Su,+K">Kung-Yi Su</a>, <a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Garraffo,+C">Cecilia Garraffo</a>, <a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Ting,+Y">Yuan-Sen Ting</a>, <a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Cargile,+P+A">Phillip A. Cargile</a>, <a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Davies,+R+L">Rebecca L. Davies</a>, <a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Benton,+C+E">Chloë E. Benton</a>, <a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Li,+Y">Yijia Li</a>, <a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Bugiani,+L">Letizia Bugiani</a>, <a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Khoram,+A+H">Amir H. Khoram</a>, <a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Bose,+S">Sownak Bose</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          20 pages, 13 figures
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">Astrophysics of Galaxies (astro-ph.GA)</span>; Cosmology and Nongalactic Astrophysics (astro-ph.CO); Solar and Stellar Astrophysics (astro-ph.SR); High Energy Physics - Phenomenology (hep-ph)
+        </div>
+
+        <p class='mathjax'>
+          We undertake a comprehensive investigation into the distribution of insitu stars within Milky Way-like galaxies, leveraging TNG50 simulations and comparing their predictions with data from the H3 survey. Our analysis reveals that 28% of galaxies demonstrate reasonable agreement with H3, while only 12% exhibit excellent alignment in their profiles, regardless of the specific spatial cut employed to define insitu stars. To uncover the underlying factors contributing to deviations between TNG50 and H3 distributions, we scrutinize correlation coefficients among internal drivers(e.g., virial radius, star formation rate [SFR]) and merger-related parameters (such as the effective mass-ratio, mean distance, average redshift, total number of mergers, average spin-ratio and maximum spin alignment between merging galaxies). Notably, we identify significant correlations between deviations from observational data and key parameters such as the median slope of virial radius, mean SFR values, and the rate of SFR change across different redshift scans. Furthermore, positive correlations emerge between deviations from observational data and parameters related to galaxy mergers. We validate these correlations using the Random Forest Regression method. Our findings underscore the invaluable insights provided by the H3 survey in unraveling the cosmic history of galaxies akin to the Milky Way, thereby advancing our understanding of galactic evolution and shedding light on the formation and evolution of Milky Way-like galaxies in cosmological simulations.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item25'>[25]</a>
+      <a href ="/abs/2407.07195" title="Abstract" id="2407.07195">
+        arXiv:2407.07195
+      </a>
+          (cross-list from hep-th)
+
+        [<a href="/pdf/2407.07195" title="Download PDF" id="pdf-2407.07195" aria-labelledby="pdf-2407.07195">pdf</a>, <a href="/format/2407.07195" title="Other formats" id="oth-2407.07195" aria-labelledby="oth-2407.07195">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Bootstrapping spinning two body problem in dynamical Chern-Simons gravity using worldline QFT
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-th?searchtype=author&amp;query=Bhattacharyya,+A">Arpan Bhattacharyya</a>, <a href="https://arxiv.org/search/hep-th?searchtype=author&amp;query=Ghosh,+D">Debodirna Ghosh</a>, <a href="https://arxiv.org/search/hep-th?searchtype=author&amp;query=Ghosh,+S">Saptaswa Ghosh</a>, <a href="https://arxiv.org/search/hep-th?searchtype=author&amp;query=Pal,+S">Sounak Pal</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          57 Pages
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Theory (hep-th)</span>; General Relativity and Quantum Cosmology (gr-qc); High Energy Physics - Phenomenology (hep-ph)
+        </div>
+
+        <p class='mathjax'>
+          In this paper, we compute the WQFT partition function, specifically the eikonal phase in a black hole scattering event in the dynamical Chern-Simons theory, using the techniques of spinning worldline quantum field theory. We consider the scattering of spinning black holes and highlight the necessary details for the calculation of the partition function. We present the $\epsilon$-expansion of the essential two-loop integrals using Integration-by-Parts (IBP) reduction and differential equation techniques, which we then utilize to compute the linear-in-order spin eikonal phase up to 3PM. Additionally, we discuss the dependence of the phase on the spin orientations of the black holes.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item26'>[26]</a>
+      <a href ="/abs/2407.07319" title="Abstract" id="2407.07319">
+        arXiv:2407.07319
+      </a>
+          (cross-list from astro-ph.CO)
+
+        [<a href="/pdf/2407.07319" title="Download PDF" id="pdf-2407.07319" aria-labelledby="pdf-2407.07319">pdf</a>, <a href="https://arxiv.org/html/2407.07319v1" title="View HTML" id="html-2407.07319" aria-labelledby="html-2407.07319" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2407.07319" title="Other formats" id="oth-2407.07319" aria-labelledby="oth-2407.07319">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          The spatial correlations between pulsars for interfering sources in Pulsar Timing Array and evidence for gravitational-wave background in NANOGrav 15-year data set
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Wu,+Y">Yu-Mei Wu</a>, <a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Bi,+Y">Yan-Chen Bi</a>, <a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Huang,+Q">Qing-Guo Huang</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          18 pages, 6 figures
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">Cosmology and Nongalactic Astrophysics (astro-ph.CO)</span>; High Energy Astrophysical Phenomena (astro-ph.HE); General Relativity and Quantum Cosmology (gr-qc); High Energy Physics - Phenomenology (hep-ph); High Energy Physics - Theory (hep-th)
+        </div>
+
+        <p class='mathjax'>
+          Pulsar timing arrays (PTAs), aimed at detecting gravitational waves (GWs) in the $1\sim 100$ nHz range, have recently made significant strides. Compelling evidence has emerged for a common spectrum signal spatially correlated among pulsars, following a Hellings-Downs (HD) pattern, which is crucial for detecting a gravitational-wave background (GWB). However, the HD curve is expected for discrete and non-interfering sources, which is unlikely to hold in realistic scenarios with potential interference among numerous GW sources, such as the supermassive black-hole binaries. Incorporating interference was previously expected to introduce an irreducible uncertainty (known as &#34;cosmic variance&#34;) in discerning the HD correlation; however, our work reveals how this interference generates measurable frequency-dependent spatial correlations distinct from the HD curve. The spatial correlations for interfering sources (referred to as &#34;ISC&#34;) still exhibit contributions in the quadrupole and higher orders, resembling the HD correlation and encoding the nature of GW radiations. We apply these novel correlations to search for a GWB in the NANOGrav 15-year data set. In an optimistic estimation, our findings show a Bayes factor of $33.7\pm 3.2$ comparing ISC to the HD correlation, and an improvement in optimal statistic signal-to-noise ratio from $4.9\pm 1.1$ for the HD correlation to $6.6\pm 1.7$ for the ISC, highlighting the significant enhancement in evidence for detecting a GWB through incorporating interference.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item27'>[27]</a>
+      <a href ="/abs/2407.07336" title="Abstract" id="2407.07336">
+        arXiv:2407.07336
+      </a>
+          (cross-list from astro-ph.CO)
+
+        [<a href="/pdf/2407.07336" title="Download PDF" id="pdf-2407.07336" aria-labelledby="pdf-2407.07336">pdf</a>, <a href="https://arxiv.org/html/2407.07336v1" title="View HTML" id="html-2407.07336" aria-labelledby="html-2407.07336" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2407.07336" title="Other formats" id="oth-2407.07336" aria-labelledby="oth-2407.07336">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Testing the cosmic distance duality relation using strong gravitational lensing time delays and Type Ia supernovae
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Qi,+J">Jing-Zhao Qi</a>, <a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Jiang,+Y">Yi-Fan Jiang</a>, <a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Hou,+W">Wan-Ting Hou</a>, <a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Zhang,+X">Xin Zhang</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          11 pages, 3 figures
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">Cosmology and Nongalactic Astrophysics (astro-ph.CO)</span>; General Relativity and Quantum Cosmology (gr-qc); High Energy Physics - Phenomenology (hep-ph)
+        </div>
+
+        <p class='mathjax'>
+          We present a comprehensive test of the cosmic distance duality relation (DDR) using a combination of strong gravitational lensing (SGL) time delay measurements and Type Ia supernovae (SNe Ia) data. We investigate three different parameterizations of potential DDR violations. To bridge the gap between SGL and SNe Ia datasets, we implement an artificial neural network (ANN) approach to reconstruct the distance modulus of SNe Ia. Our analysis uniquely considers both scenarios where the absolute magnitude of SNe Ia ($M_B$) is treated as a free parameter and where it is fixed to a Cepheid-calibrated value. Using a sample of six SGL systems and the Pantheon+ SNe Ia dataset, we find no statistically significant evidence for DDR violations across all parameterizations. The consistency of our findings across different parameterizations not only reinforces confidence in the standard DDR but also demonstrates the robustness of our analytical approach.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item28'>[28]</a>
+      <a href ="/abs/2407.07484" title="Abstract" id="2407.07484">
+        arXiv:2407.07484
+      </a>
+          (cross-list from hep-ex)
+
+        [<a href="/pdf/2407.07484" title="Download PDF" id="pdf-2407.07484" aria-labelledby="pdf-2407.07484">pdf</a>, <a href="https://arxiv.org/html/2407.07484v1" title="View HTML" id="html-2407.07484" aria-labelledby="html-2407.07484" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2407.07484" title="Other formats" id="oth-2407.07484" aria-labelledby="oth-2407.07484">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          A Decade of Collectivity in Small Systems
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ex?searchtype=author&amp;query=Grosse-Oetringhaus,+J+F">Jan Fiete Grosse-Oetringhaus</a>, <a href="https://arxiv.org/search/hep-ex?searchtype=author&amp;query=Wiedemann,+U+A">Urs Achim Wiedemann</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          Invited article submitted for consideration in World Scientific Annual Review of Particle Physics
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Experiment (hep-ex)</span>; High Energy Physics - Phenomenology (hep-ph)
+        </div>
+
+        <p class='mathjax'>
+          Signatures of collectivity, including azimuthally anisotropic and radial flow as well as characteristic hadrochemical dependencies, have been observed since long in (ultra)relativistic nucleus-nucleus collisions. They underpin the interpretation of these collision systems in terms of QGP formation and close-to-perfect fluidity. Remarkably, however, essentially all these signatures of collectivity have been identified within the last decade in collision systems as small as pp and p-Pb, where collective phenomena had been assumed to be absent traditionally. Precursor phenomena may have been found even in ep and $e^+e^-$ collisions. This article provides a complete review of all data on small system collectivity. It reviews model simulations of these data where available. However, in the absence of a phenomenologically fully satisfactory description of collectivity across all system sizes, we focus in particular on the theoretical basis of all dynamical frameworks of collectivity invoked in heavy ion collisions, and their expected scaling with system size. Our discussion clarifies to what extent all dynamical explanations are challenged by the available data.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item29'>[29]</a>
+      <a href ="/abs/2407.07724" title="Abstract" id="2407.07724">
+        arXiv:2407.07724
+      </a>
+          (cross-list from nucl-ex)
+
+        [<a href="/pdf/2407.07724" title="Download PDF" id="pdf-2407.07724" aria-labelledby="pdf-2407.07724">pdf</a>, <a href="https://arxiv.org/html/2407.07724v1" title="View HTML" id="html-2407.07724" aria-labelledby="html-2407.07724" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2407.07724" title="Other formats" id="oth-2407.07724" aria-labelledby="oth-2407.07724">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Flattenicity as &#34;centrality&#34; estimator in p-Pb collisions simulated with PYTHIA 8.312 Angantyr
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/nucl-ex?searchtype=author&amp;query=Ortiz,+A">Antonio Ortiz</a>, <a href="https://arxiv.org/search/nucl-ex?searchtype=author&amp;query=Bencedi,+G">Gyula Bencedi</a>, <a href="https://arxiv.org/search/nucl-ex?searchtype=author&amp;query=Fan,+F">Feng Fan</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          8 pages, 4 figures
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">Nuclear Experiment (nucl-ex)</span>; High Energy Physics - Phenomenology (hep-ph)
+        </div>
+
+        <p class='mathjax'>
+          In this paper, a &#34;centrality&#34; estimator based on flattenicity ($\rho$) is studied in proton-led (p-Pb) collisions at $\sqrt{s_{\rm NN}}=5.02$ TeV using PYTHIA 8 Angantyr. Although Angantyr is still under development, the existing implementation is enough to study the particle production in systems where medium effects are absent. Firstly, ALICE data on pseudorapidity distributions as a function of the forward multiplicity (V0M), as well as transverse momentum distributions of identified particles in non-single diffractive p-Pb collisions, are compared with Angantyr. Secondly, the average number of binary nucleon-nucleon ($N_{\rm coll}$) collisions for different &#34;centrality&#34; estimators are compared. The studies include the following &#34;centrality&#34; estimators: V0M, $\rho$ and midrapidity multiplicity (CL1). On one hand, the &#34;centrality&#34; dependence of $\langle N_{\rm coll} \rangle$ for the $\rho$ selection shows the smallest deviations ($&lt;8$ %) with respect to that obtained using impact parameter $b$; on the other hand, the V0M and CL1 yield huge deviations (up to a factor 2) with respect to the results using $b$. The particle ratios and nuclear modification factors ($Q_{\rm pPb}$) as a function of $p_{\rm T}$ are also studied. The proton-to-pion ratio exhibits a flow-like peak at intermediate $p_{\rm T}$ (2-8 GeV/$c$) with little or no &#34;centrality&#34; dependence for V0M, $\rho$ and $b$ selections. The kaon-to-pion ratio as a function of $p_{\rm T}$ is &#34;centrality&#34; independent for the same selections. On the contrary, for the CL1 class the ratios exhibit the typical behaviour associated with hard physics. Regarding $Q_{\rm pPb}$, a peak at intermediate $p_{\rm T}$ ($2-8$ GeV/$c$) for different particle species is observed when the &#34;centrality&#34; is obtained with $b$ or $\rho$. The observed features diminish for the selections based on V0M and CL1.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item30'>[30]</a>
+      <a href ="/abs/2407.07878" title="Abstract" id="2407.07878">
+        arXiv:2407.07878
+      </a>
+          (cross-list from astro-ph.CO)
+
+        [<a href="/pdf/2407.07878" title="Download PDF" id="pdf-2407.07878" aria-labelledby="pdf-2407.07878">pdf</a>, <a href="https://arxiv.org/html/2407.07878v1" title="View HTML" id="html-2407.07878" aria-labelledby="html-2407.07878" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2407.07878" title="Other formats" id="oth-2407.07878" aria-labelledby="oth-2407.07878">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          The Cosmological Preference for Negative Neutrino Mass
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Green,+D">Daniel Green</a>, <a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Meyers,+J">Joel Meyers</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          35 pages, 12 figures, 2 tables
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">Cosmology and Nongalactic Astrophysics (astro-ph.CO)</span>; High Energy Physics - Phenomenology (hep-ph); High Energy Physics - Theory (hep-th)
+        </div>
+
+        <p class='mathjax'>
+          The most precise determination of the sum of neutrino masses from cosmological data, derived from analysis of the cosmic microwave background (CMB) and baryon acoustic acoustic oscillations (BAO) from the Dark Energy Spectroscopic Instrument (DESI), favors a value below the minimum inferred from neutrino flavor oscillation experiments. We explore which data is most responsible of this puzzling aspect of the current constraints on neutrino mass and whether it is related to other anomalies in cosmology. We demonstrate conclusively that the preference for negative neutrino masses is a consequence of larger than expected lensing of the CMB in both the two- and four-point lensing statistics. Furthermore, we show that this preference is robust to changes in likelihoods of the BAO and CMB optical depth analyses given the available data. We then show that this excess clustering is not easily explained by changes to the expansion history and is likely distinct from the preference for for dynamical dark energy in DESI BAO data. Finally, we discuss how future data may impact these results, including an analysis of Planck CMB with mock DESI 5-year data. We conclude that the negative neutrino mass preference is likely to persist even as more cosmological data is collected in the near future.
+        </p>
+      </div>
+    </dd>
+</dl>
+
+      <dl id='articles'>
+    <h3>Replacement submissions for Thursday, 11 July 2024 (showing 30 of 30 entries )</h3>
+
+
+    <dt>
+      <a name='item31'>[31]</a>
+      <a href ="/abs/2208.06926" title="Abstract" id="2208.06926">
+        arXiv:2208.06926
+      </a>
+          (replaced)
+
+        [<a href="/pdf/2208.06926" title="Download PDF" id="pdf-2208.06926" aria-labelledby="pdf-2208.06926">pdf</a>, <a href="https://arxiv.org/html/2208.06926v4" title="View HTML" id="html-2208.06926" aria-labelledby="html-2208.06926" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2208.06926" title="Other formats" id="oth-2208.06926" aria-labelledby="oth-2208.06926">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Spin-Flavor Precession Phase Effects in Supernova
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Bulmus,+T">T. Bulmus</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Pehlivan,+Y">Y. Pehlivan</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          18 pages, 10 figures
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>; High Energy Astrophysical Phenomena (astro-ph.HE); Solar and Stellar Astrophysics (astro-ph.SR)
+        </div>
+
+        <p class='mathjax'>
+          We study the phase effects driven by neutrino magnetic moment for Majorana neutrinos in a core collapse supernova. A neutrino with a large magnetic moment is emitted in a superposition of energy eigenstates from the neutrinosphere. These energy eigenstates can interfere to create a phase effect at a partially adiabatic spin flavor precession (SFP) resonance. We examine the dependence of the SFP phase effect on the size of the neutrino magnetic moment as well as its variation with the post bounce time. In particular, at late post-bounce times the SFP resonance becomes wider and eventually overlaps with the Mikheev-Smirnov-Wolfenstein (MSW) resonance. At this point, Landau-Zener criteria for adiabaticity can no longer be applied to individual resonances, but we show that SFP phase effect is still present after the overlap. We also discuss the observability of the SFP phase effect at late post bounce times where it is more likely to make an impact. Our analysis for the Deep Underground Neutrino Experiment (DUNE) reveals that at low energies event rates do not fluctuate despite the presence of a sizable SFP phase effect. We find larger event rate fluctuations at high energies, but these fluctuations are also erased in the energy spectra of the observed charged leptons. A more refined treatment of electron fraction and the inclusion of neutrino-neutrino interactions may change our conclusions for observability in future studies.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item32'>[32]</a>
+      <a href ="/abs/2305.13950" title="Abstract" id="2305.13950">
+        arXiv:2305.13950
+      </a>
+          (replaced)
+
+        [<a href="/pdf/2305.13950" title="Download PDF" id="pdf-2305.13950" aria-labelledby="pdf-2305.13950">pdf</a>, <a href="/format/2305.13950" title="Other formats" id="oth-2305.13950" aria-labelledby="oth-2305.13950">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Effect of nuclear structure on particle production in relativistic heavy-ion collisions using the AMPT model
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Sinha,+P">P. Sinha</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Bairathi,+V">V. Bairathi</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Gopal,+K">K. Gopal</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Jena,+C">C. Jena</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Kabana,+S">S. Kabana</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          14 pages, 9 figures
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>; High Energy Physics - Experiment (hep-ex); Nuclear Experiment (nucl-ex)
+        </div>
+
+        <p class='mathjax'>
+          We report first study of transverse momentum ($p_\mathrm{T}$) spectra for $\pi^{\pm}$, $K^{\pm}$, $p$, and $\bar{p}$ in isobar, $^{96}_{44}$Ru+$^{96}_{44}$Ru and $^{96}_{40}$Zr+$^{96}_{40}$Zr, collisions at $\sqrt{s_{\mathrm{NN}}} = 200$ GeV using a multi-phase transport (AMPT) model. Particle yields ($dN/dy$), average transverse momenta ($\langle p_\mathrm{T} \rangle$), and particle ratios are reported in various collision systems with different parameterizations of the Woods-Saxon (WS) distribution. We observed a maximum difference of 5% in the particle yields in peripheral collisions when we included a quadrupole and octupole deformation and a nuclear size difference between the isobars. The $\pi^{-}$/$\pi^{+}$ ratio is smaller in Ru+Ru collisions compared to Zr+Zr collisions indicating an effect of isospin due to difference in number of protons and neutrons between the two nuclei. The $K^{-}$/$K^{+}$ ratio is same in both the systems indicating the dominance of the pair production mechanism in the kaon production. The $\bar{p}/p$ ratio is further smaller in Ru+Ru collisions than Zr+Zr collisions, indicating the effect of baryon stopping in addition to the isospin effect. A system size dependence is observed in $dN/dy$ and $\langle p_\mathrm{T} \rangle$ when we compare the results from isobar collisions with Au+Au and U+U collisions.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item33'>[33]</a>
+      <a href ="/abs/2308.10946" title="Abstract" id="2308.10946">
+        arXiv:2308.10946
+      </a>
+          (replaced)
+
+        [<a href="/pdf/2308.10946" title="Download PDF" id="pdf-2308.10946" aria-labelledby="pdf-2308.10946">pdf</a>, <a href="https://arxiv.org/html/2308.10946v2" title="View HTML" id="html-2308.10946" aria-labelledby="html-2308.10946" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2308.10946" title="Other formats" id="oth-2308.10946" aria-labelledby="oth-2308.10946">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Effective interactions for the SM fermion mass hierarchy and their possible UV realization
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Hern%C3%A1ndez,+A+E+C">A. E. Cárcamo Hernández</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Restrepo,+D">Diego Restrepo</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Schmidt,+I">Ivan Schmidt</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Zapata,+%C3%93">Óscar Zapata</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          Improved version
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>
+        </div>
+
+        <p class='mathjax'>
+          We built an extended 2HDM theory with a spontaneously broken $U(1) _{X}$ global symmetry, where the tree level Universal Seesaw Mechanism generates the mass hierarchy of the Standard Model charged fermions and the Zee-Babu mechanism produces tiny active neutrino masses. The third family of SM charged fermions gets tree level masses from Yukawa interactions involving the Higgs doublets $H_1$ (for the top quark) and $H_2$ (for the bottom quark and tau lepton). The model under consideration is consistent with SM fermion masses and mixings, with the muon and electron $g-2$ anomalies and successfully accommodates the constraints arising from charged lepton flavor violation and meson oscillations. The proposed model predicts rates for charged lepton flavor violating decays within the reach of forthcoming experiments.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item34'>[34]</a>
+      <a href ="/abs/2309.12514" title="Abstract" id="2309.12514">
+        arXiv:2309.12514
+      </a>
+          (replaced)
+
+        [<a href="/pdf/2309.12514" title="Download PDF" id="pdf-2309.12514" aria-labelledby="pdf-2309.12514">pdf</a>, <a href="https://arxiv.org/html/2309.12514v3" title="View HTML" id="html-2309.12514" aria-labelledby="html-2309.12514" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2309.12514" title="Other formats" id="oth-2309.12514" aria-labelledby="oth-2309.12514">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Prospects for establishing limits on the SMEFT operators from the production processes of three and four top quarks in hadron collisions
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Aleshko,+A">A. Aleshko</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Boos,+E">E. Boos</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Bunichev,+V">V. Bunichev</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Dudko,+L">L. Dudko</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          20 pages, 5 figures
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>
+        </div>
+
+        <p class='mathjax'>
+          Numerical simulations of processes of three and four top quark hadroproduction are carried out in the SMEFT model framework. The simulated data are used to derive expected theoretical constraints on Wilson coefficients of relevant SMEFT operators of dimension six. Obtained limits for both cases are discussed and compared in terms of processes&#39; sensitivity to possible BSM contribution. Results show that operator $O_{tt}^1$ is better constrained by the process of four top quark production, whereas other four operators $O_{QQ}^1$, $O_{Qt}^1$, $O_{Qt}^8$ and $O_{QQ}^8$, are similarly constrained in three and four top quark production processes. In all cases, the expected limits taken from the simultaneous analysis of the production of three and four top quarks are strengthened. Analytical expressions for the partial amplitudes of the processes $tt\to tt$ and $t\bar{t}\to t\bar{t}$ caused by the operators $O^1_{tt}$, $O^1_{QQ}$, $O^1_{Qt}$, $O^8_{Qt}$, $O^8_{QQ}$ were obtained for the first time. Based on the expressions of the obtained partial amplitudes, graphs of the perturbative unitarity boundary for the listed operators were drawn. The question of how kinematic cuts motivated by partial unitarity affect the resulting constraints on the Willson coefficients is addressed. It is shown that in all cases the limits are getting somewhat worse if such cuts are applied.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item35'>[35]</a>
+      <a href ="/abs/2309.14769" title="Abstract" id="2309.14769">
+        arXiv:2309.14769
+      </a>
+          (replaced)
+
+        [<a href="/pdf/2309.14769" title="Download PDF" id="pdf-2309.14769" aria-labelledby="pdf-2309.14769">pdf</a>, <a href="https://arxiv.org/html/2309.14769v2" title="View HTML" id="html-2309.14769" aria-labelledby="html-2309.14769" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2309.14769" title="Other formats" id="oth-2309.14769" aria-labelledby="oth-2309.14769">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Unveiling Neutrino Mysteries with $\Delta(27)$ Symmetry
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Dey,+M">Manash Dey</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Roy,+S">Subhankar Roy</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          29 pages, 10 tables and 33 figures
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>
+        </div>
+
+        <p class='mathjax'>
+          An elegant model is proposed by extending the Standard Model using the $\Delta(27)\times Z_3 \times Z_{10}$ symmetry within the framework of the Type-I + Type-II seesaw mechanism. This model is particularly noteworthy for its ability to restrict the atmospheric mixing angle, $\theta_{23}$, to specific values, and provides an explanation for the observed hierarchy of charged lepton masses. The neutrino mass matrix texture defined by three real parameters, predicts the three neutrino mass eigenvalues and the two Majorana phases. Furthermore, the model is tested against the experimental results of neutrino-less double beta ($0\nu\beta\beta$) decay and charged lepton flavour violation (cLFV) experiments.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item36'>[36]</a>
+      <a href ="/abs/2311.07654" title="Abstract" id="2311.07654">
+        arXiv:2311.07654
+      </a>
+          (replaced)
+
+        [<a href="/pdf/2311.07654" title="Download PDF" id="pdf-2311.07654" aria-labelledby="pdf-2311.07654">pdf</a>, <a href="https://arxiv.org/html/2311.07654v2" title="View HTML" id="html-2311.07654" aria-labelledby="html-2311.07654" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2311.07654" title="Other formats" id="oth-2311.07654" aria-labelledby="oth-2311.07654">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Constraints on Dark Matter from Dynamical Heating of Stars in Ultrafaint Dwarfs. Part 1: MACHOs and Primordial Black Holes
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Graham,+P+W">Peter W. Graham</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Ramani,+H">Harikrishnan Ramani</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          19 Pages, 6 Figures
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>; Cosmology and Nongalactic Astrophysics (astro-ph.CO); Astrophysics of Galaxies (astro-ph.GA); High Energy Physics - Theory (hep-th)
+        </div>
+
+        <p class='mathjax'>
+          We place limits on dark matter made up of compact objects significantly heavier than a solar mass, such as MACHOs or primordial black holes (PBHs). In galaxies, the gas of such objects is generally hotter than the gas of stars and will thus heat the gas of stars even through purely gravitational interactions. Ultrafaint dwarf galaxies (UFDs) maximize this effect. Observations of the half-light radius in UFDs thus place limits on MACHO dark matter. We build upon previous constraints with an improved heating rate calculation including both direct and tidal heating, and consideration of the heavier mass range above $10^4 \, M_\odot$. Additionally we find that MACHOs may lose energy and migrate in to the center of the UFD, increasing the heat transfer to the stars. UFDs can constrain MACHO dark matter with masses between about $10 M_\odot$ and $10^8 M_\odot$ and these are the strongest constraints over most of this range.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item37'>[37]</a>
+      <a href ="/abs/2312.10455" title="Abstract" id="2312.10455">
+        arXiv:2312.10455
+      </a>
+          (replaced)
+
+        [<a href="/pdf/2312.10455" title="Download PDF" id="pdf-2312.10455" aria-labelledby="pdf-2312.10455">pdf</a>, <a href="https://arxiv.org/html/2312.10455v3" title="View HTML" id="html-2312.10455" aria-labelledby="html-2312.10455" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2312.10455" title="Other formats" id="oth-2312.10455" aria-labelledby="oth-2312.10455">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Gravitational waves from cosmic superstrings and gauge strings
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Marfatia,+D">Danny Marfatia</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Zhou,+Y">Ye-Ling Zhou</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          29 pages, 12 figures, 2 tables. Version to appear in JHEP
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>; Cosmology and Nongalactic Astrophysics (astro-ph.CO); General Relativity and Quantum Cosmology (gr-qc); High Energy Physics - Experiment (hep-ex); High Energy Physics - Theory (hep-th)
+        </div>
+
+        <p class='mathjax'>
+          We perform a phenomenological comparison of the gravitational wave (GW) spectrum expected from cosmic gauge string networks and superstring networks comprised of multiple string types. We show how violations of scaling behavior and the evolution of the number of relativistic degrees of freedom in the early Universe affect the GW spectrum. We derive simple analytical expressions for the GW spectrum from superstrings and gauge strings that are valid for all frequencies relevant to pulsar timing arrays (PTAs) and laser interferometers. We analyze the latest data from PTAs and show that superstring networks are consistent with 32 nHz data from NANOGrav, but are excluded by 3.2 nHz data at $3\sigma$ unless the string coupling $g_s&lt;0.2$ or the strings evolve in only about 10% of the volume of the higher-dimensional space. We also point out that while gauge string networks are excluded by NANOGrav-15 data at $3\sigma$, they are completely compatible with EPTA and PPTA data. Finally, we study correlations between GW signals at PTAs and laser interferometers.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item38'>[38]</a>
+      <a href ="/abs/2312.12507" title="Abstract" id="2312.12507">
+        arXiv:2312.12507
+      </a>
+          (replaced)
+
+        [<a href="/pdf/2312.12507" title="Download PDF" id="pdf-2312.12507" aria-labelledby="pdf-2312.12507">pdf</a>, <a href="https://arxiv.org/html/2312.12507v2" title="View HTML" id="html-2312.12507" aria-labelledby="html-2312.12507" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2312.12507" title="Other formats" id="oth-2312.12507" aria-labelledby="oth-2312.12507">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Decoding the $B \to K \nu \nu$ excess at Belle II: kinematics, operators, and masses
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Fridell,+K">Kåre Fridell</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Ghosh,+M">Mitrajyoti Ghosh</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Okui,+T">Takemichi Okui</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Tobioka,+K">Kohsaku Tobioka</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          7 pages, 6 figures, matches published version
+        </div>
+
+        <div class='list-journal-ref'><span class='descriptor'>Journal-ref:</span>
+          Phys.Rev.D 109 (2024) 11, 115006
+        </div>
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>; High Energy Physics - Experiment (hep-ex)
+        </div>
+
+        <p class='mathjax'>
+          An excess in the branching fraction for $B^+ \to K^+ \nu\nu$ recently measured at Belle II may be a hint of new physics. We perform thorough likelihood analyses for different new physics scenarios such as $B \to KX$ with a new invisible particle $X$, or $B\to K\chi\chi$ through a scalar, vector, or tensor current with $\chi$ being a new invisible particle or a neutrino. We find that vector-current 3-body decay with $m_X \simeq 0.6$ GeV - which may be dark matter - is most favored, while 2-body decay with $m_X \simeq 2$ GeV is also competitive. The best-fit branching fractions for the scalar and tensor cases are a few times larger than for the 2-body and vector cases. Past BaBar measurements provide further discrimination, although the best-fit parameters stay similar.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item39'>[39]</a>
+      <a href ="/abs/2312.13740" title="Abstract" id="2312.13740">
+        arXiv:2312.13740
+      </a>
+          (replaced)
+
+        [<a href="/pdf/2312.13740" title="Download PDF" id="pdf-2312.13740" aria-labelledby="pdf-2312.13740">pdf</a>, <a href="https://arxiv.org/html/2312.13740v2" title="View HTML" id="html-2312.13740" aria-labelledby="html-2312.13740" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2312.13740" title="Other formats" id="oth-2312.13740" aria-labelledby="oth-2312.13740">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Non-Canonical Nucleon Decays as Window into Light New Physics
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Fridell,+K">Kåre Fridell</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Hati,+C">Chandan Hati</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Takhistov,+V">Volodymyr Takhistov</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          8 pages, 2 figures, version accepted for publication
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>; High Energy Physics - Experiment (hep-ex)
+        </div>
+
+        <p class='mathjax'>
+          Nucleon decays are generic predictions of motivated theories, including those based on the unification of forces and supersymmetry. We demonstrate that non-canonical nucleon decays offer a unique opportunity to broadly probe light new particles beyond the Standard Model with masses below $\sim$few GeV over decades in mass range, including axion-like particles, dark photons, sterile neutrinos, and scalar dark matter. Conventional searches can misinterpret and even completely miss such new physics. We propose a general strategy based on momenta of visible decay final states to probe these processes, offering a rich physics program for existing and upcoming experiments such as Super-Kamiokande, Hyper-Kamiokande, DUNE, and JUNO.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item40'>[40]</a>
+      <a href ="/abs/2312.14224" title="Abstract" id="2312.14224">
+        arXiv:2312.14224
+      </a>
+          (replaced)
+
+        [<a href="/pdf/2312.14224" title="Download PDF" id="pdf-2312.14224" aria-labelledby="pdf-2312.14224">pdf</a>, <a href="/format/2312.14224" title="Other formats" id="oth-2312.14224" aria-labelledby="oth-2312.14224">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          $Z_c$ and $Z_{cs}$ systems with operator mixing at NLO in QCD sum rules
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Wua,+R">Ren-Hua Wua</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Wang,+C">Chen-Yu Wang</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Meng,+C">Ce Meng</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Ma,+Y">Yan-Qing Ma</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Chao,+K">Kuang-Ta Chao</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          49 pages, 32 fugures. version accepted for publication in JHEP. arXiv admin note: substantial text overlap with <a href="https://arxiv.org/abs/2201.11714" data-arxiv-id="2201.11714" class="link-https">arXiv:2201.11714</a>
+        </div>
+
+        <div class='list-journal-ref'><span class='descriptor'>Journal-ref:</span>
+          JHEP 06 (2024) 216
+        </div>
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>
+        </div>
+
+        <p class='mathjax'>
+          We study the mass spectra of hidden-charm tetraquark systems with quantum numbers $(I^G)J^P=(1^+)1^+$ using QCD sum rules. The analysis incorporates the complete next-to-leading order (NLO) contribution to the perturbative QCD part of the operator product expansions, with particular attention to operator mixing effects due to renormalization group evolution. For the $\bar{d}c\bar{c}u$ system, the masses of two mixed operators, $J_{1,5}^{\text{Mixed}}$ and $J_{2,6}^{\text{Mixed}}$, are determined to be $3.89^{+0.18}_{-0.12}$ GeV and $4.03^{+0.06}_{-0.07}$ GeV, respectively, closely matching those of $Z_c$(3900) and $Z_c(4020)$. Similarly, for the $\bar{s}c\bar{c}u$ states, the masses of $J_{1,5}^{\text{Mixed}}$ and $J_{2,6}^{\text{Mixed}}$ are found to be $4.02^{+0.17}_{-0.09}$ GeV and $4.21^{+0.08}_{-0.07}$ GeV, respectively, in close proximity to $Z_{cs}$(3983)/$Z_{cs}$(4000) and $Z_{cs}$(4220), consistent with the expectation that they are the partners of $Z_c$(3900) and $Z_c$(4020). Our results highlight the crucial role of operator mixing, an inevitable effect in a complete NLO calculation, in achieving a robust phenomenological description for the tetraquark system.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item41'>[41]</a>
+      <a href ="/abs/2402.03438" title="Abstract" id="2402.03438">
+        arXiv:2402.03438
+      </a>
+          (replaced)
+
+        [<a href="/pdf/2402.03438" title="Download PDF" id="pdf-2402.03438" aria-labelledby="pdf-2402.03438">pdf</a>, <a href="https://arxiv.org/html/2402.03438v2" title="View HTML" id="html-2402.03438" aria-labelledby="html-2402.03438" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2402.03438" title="Other formats" id="oth-2402.03438" aria-labelledby="oth-2402.03438">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Quantum Decoherence Effects: a complete treatment
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Barenboim,+G">Gabriela Barenboim</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Gago,+A+M">Alberto M. Gago</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          13 pages, 4 figures
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>
+        </div>
+
+        <p class='mathjax'>
+          Physical systems in real life are inextricably linked to their surroundings and never completely separated from them. Truly closed systems do not exist. The phenomenon of decoherence, which is brought about by the interaction with the environment, removes the relative phase of quantum states in superposition and makes them incoherent. In neutrino physics, decoherence, although extensively studied has only been analyzed thus far, exclusively in terms of its dissipative characteristics. While it is true that dissipation, or the exponential suppression, eventually is the main observable effect, the exchange of energy between the medium and the system, is an important factor that has been overlooked up until now. In this work, we introduce this term and analyze its consequences.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item42'>[42]</a>
+      <a href ="/abs/2402.17568" title="Abstract" id="2402.17568">
+        arXiv:2402.17568
+      </a>
+          (replaced)
+
+        [<a href="/pdf/2402.17568" title="Download PDF" id="pdf-2402.17568" aria-labelledby="pdf-2402.17568">pdf</a>, <a href="https://arxiv.org/html/2402.17568v2" title="View HTML" id="html-2402.17568" aria-labelledby="html-2402.17568" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2402.17568" title="Other formats" id="oth-2402.17568" aria-labelledby="oth-2402.17568">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Quasi-Classical Gluon Fields and Low&#39;s Soft Theorem at Small $x$
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Li,+M">Ming Li</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          6 pages, 1 figure; version published in PRL
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>
+        </div>
+
+        <p class='mathjax'>
+          In the high energy limit, soft gluons can be approximately described by quasi-classical gluon fields. It is well-known that the gluon field is a pure gauge field on the transverse plane at eikonal order. We derived the complete next-to-eikonal order solutions of the classical Yang-Mills equations for soft gluons in the dense nuclear regime. Utilizing these solutions, it is shown that Low&#39;s soft theorem at small x can be obtained by considering off-diagonal matrix elements of quasi-classical chromoelectric field between single gluon states in the dilute regime. We further propose on extending Low&#39;s soft theorem at small x to incorporate the effects of gluon saturation in the dense regime.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item43'>[43]</a>
+      <a href ="/abs/2403.07127" title="Abstract" id="2403.07127">
+        arXiv:2403.07127
+      </a>
+          (replaced)
+
+        [<a href="/pdf/2403.07127" title="Download PDF" id="pdf-2403.07127" aria-labelledby="pdf-2403.07127">pdf</a>, <a href="https://arxiv.org/html/2403.07127v2" title="View HTML" id="html-2403.07127" aria-labelledby="html-2403.07127" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2403.07127" title="Other formats" id="oth-2403.07127" aria-labelledby="oth-2403.07127">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Dimensional Regularization and Two-Loop Vacuum Polarization Operator: Master Integrals, Analytic Results and Energy Shifts
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Laporta,+S">S. Laporta</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Jentschura,+U+D">U. D. Jentschura</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          17 pages; RevTeX; see Physical Review D for Supplementary Material
+        </div>
+
+        <div class='list-journal-ref'><span class='descriptor'>Journal-ref:</span>
+          Phys.Rev.D 109 (2024) 096020
+        </div>
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>
+        </div>
+
+        <p class='mathjax'>
+          We present a complete reevaluation of the irreducible two-loop vacuum-polarization correction to the photon propagator in quantum electrodynamics, i.e. with an electron-positron pair in the fermion propagators. The integration is carried out by reducing the integrations to a limited set of master integrals, which are calculated using integration-by-parts identities. Dimensional regularization is used in D = 4-2*epsilon dimensions, and on-mass shell renormalization is employed. The one-loop effect is given to order epsilon, to be combined with the 1/epsilon divergence of the two-loop amplitude. Master integrals are given. Final evaluations of two-loop energy shifts for 1S, 2S, and 2P states are done analytically, and results are presented, with an emphasis on muonic hydrogen. For relativistic Dirac-Coulomb reference states, higher-order coefficients are obtained for the Zalpha-expansion. We compare the results obtained to the existing literature.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item44'>[44]</a>
+      <a href ="/abs/2403.13087" title="Abstract" id="2403.13087">
+        arXiv:2403.13087
+      </a>
+          (replaced)
+
+        [<a href="/pdf/2403.13087" title="Download PDF" id="pdf-2403.13087" aria-labelledby="pdf-2403.13087">pdf</a>, <a href="https://arxiv.org/html/2403.13087v2" title="View HTML" id="html-2403.13087" aria-labelledby="html-2403.13087" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2403.13087" title="Other formats" id="oth-2403.13087" aria-labelledby="oth-2403.13087">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          An improved calculation of the $D_{(s)}^*D_{(s)}V$ and $B_{(s)}^*B_{(s)}V$ couplings from light-cone sum rules
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Jin,+S">Su-Ping Jin</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Jiang,+H">Hua-Yu Jiang</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          46 pages, 4 figures, 13 tables
+        </div>
+
+        <div class='list-journal-ref'><span class='descriptor'>Journal-ref:</span>
+          Eur.Phys.J.C 84 (2024) 6, 598
+        </div>
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>
+        </div>
+
+        <p class='mathjax'>
+          We present an improved calculation of the $D_{(s)}^*D_{(s)}V$ and $B_{(s)}^*B_{(s)}V$ coupling constants, where $V$ denotes $\rho$, $K^\ast$, $\omega$, and $\phi$ meson. These couplings govern the QCD long-distance dynamics in interactions between heavy pseudoscalar/vector mesons and light vector mesons. Our analysis is conducted within the framework of QCD light-cone sum rules (LCSRs) by utilizing the light-cone distribution amplitudes (LCDAs) of light vector mesons. By systematically incorporating the subleading power corrections and higher-twist contributions at leading order (LO) and including the next-to-leading order (NLO) corrections at leading power, we achieve enhanced accuracy in the light-cone operator product expansion (OPE) for the underlying correlation function. In assessing the reliability of the established LCSRs, we consider uncertainties arising from the choice of the quark-hadron duality region in the double dispersion relation. Building upon these improvements, we accomplish an optimized computation and analysis for the strong coupling constants $g_{H^\ast HV}$ which are used to extract the effective coupling $\lambda$ in the heavy meson chiral perturbation theory (HM$\chi$PT). Furthermore, we investigate the $SU(3)$ flavour symmetry breaking effects in detail and compare our sum rule calculations with previous studies in an exploratory way.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item45'>[45]</a>
+      <a href ="/abs/2404.04229" title="Abstract" id="2404.04229">
+        arXiv:2404.04229
+      </a>
+          (replaced)
+
+        [<a href="/pdf/2404.04229" title="Download PDF" id="pdf-2404.04229" aria-labelledby="pdf-2404.04229">pdf</a>, <a href="https://arxiv.org/html/2404.04229v3" title="View HTML" id="html-2404.04229" aria-labelledby="html-2404.04229" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2404.04229" title="Other formats" id="oth-2404.04229" aria-labelledby="oth-2404.04229">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Understanding the SM gauge group from SMEFT
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Li,+H">Hao-Lin Li</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Xu,+L">Ling-Xiao Xu</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          v3: JHEP version, the original title &#34;The Standard Model Gauge Group, SMEFT, and Generalized Symmetries&#34; is adjusted in the published version, some improvements
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>; High Energy Physics - Experiment (hep-ex); High Energy Physics - Theory (hep-th)
+        </div>
+
+        <p class='mathjax'>
+          We discuss heavy particles that can be used to pin down the faithful Standard Model (SM) gauge group and their patterns in the SM effective field theory (SMEFT). These heavy particles are not invariant under a specific $\mathbb{Z}_6$ subgroup of $SU(3)_c\times SU(2)_L \times U(1)_Y$, which however acts trivially on all the SM particles, hence the faithful SM gauge group remains undetermined. Different realizations of the faithful SM gauge group correspond to different spectra of heavy particles, and they also correspond to distinct sets of line operators with one-form global symmetry acting on them. We show that the heavy particles not invariant under the $\mathbb{Z}_6$ group cannot appear in tree-level ultraviolet completions of SMEFT, this enforces us to consider one-loop UV completions of SMEFT to identify the $\mathbb{Z}_6$ non-invariant heavy particles. We demonstrate with examples that correlations between Wilson coefficients provide an efficient way to examine models with $\mathbb{Z}_6$ non-invariant heavy particles. Finally, we prove that all the scalars that can trigger electroweak symmetry breaking must be invariant under the $\mathbb{Z}_6$ group, hence they cannot be used to probe the faithful SM gauge group.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item46'>[46]</a>
+      <a href ="/abs/2405.01032" title="Abstract" id="2405.01032">
+        arXiv:2405.01032
+      </a>
+          (replaced)
+
+        [<a href="/pdf/2405.01032" title="Download PDF" id="pdf-2405.01032" aria-labelledby="pdf-2405.01032">pdf</a>, <a href="https://arxiv.org/html/2405.01032v2" title="View HTML" id="html-2405.01032" aria-labelledby="html-2405.01032" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2405.01032" title="Other formats" id="oth-2405.01032" aria-labelledby="oth-2405.01032">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Approaching the conformal limit of quark matter with different chemical potentials
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Brown,+C">Connor Brown</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Dexheimer,+V">Veronica Dexheimer</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Jacobsen,+R+B">Rafael Bán Jacobsen</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Farias,+R+L+S">Ricardo Luciano Sonego Farias</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          14 pages, 5 figures
+        </div>
+
+        <div class='list-journal-ref'><span class='descriptor'>Journal-ref:</span>
+          Symmetry 2024, 16, 852
+        </div>
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>; High Energy Astrophysical Phenomena (astro-ph.HE); Solar and Stellar Astrophysics (astro-ph.SR); High Energy Physics - Theory (hep-th); Nuclear Theory (nucl-th)
+        </div>
+
+        <p class='mathjax'>
+          We study in detail the influence of different chemical potentials (baryon, charged, strange, and neutrino) on how and how fast a free gas of quarks in the zero-temperature limit reaches the conformal limit. We discuss the influence of non-zero masses, the inclusion of leptons, and different constraints, such as charge neutrality, zero-net strangeness, and fixed lepton fraction. We also investigate for the first time how the symmetry energy of the system under some of these conditions approaches the conformal limit. Finally, we briefly discuss what kind of corrections are expected from perturbative QCD as one goes away from the conformal limit.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item47'>[47]</a>
+      <a href ="/abs/2405.19190" title="Abstract" id="2405.19190">
+        arXiv:2405.19190
+      </a>
+          (replaced)
+
+        [<a href="/pdf/2405.19190" title="Download PDF" id="pdf-2405.19190" aria-labelledby="pdf-2405.19190">pdf</a>, <a href="https://arxiv.org/html/2405.19190v2" title="View HTML" id="html-2405.19190" aria-labelledby="html-2405.19190" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2405.19190" title="Other formats" id="oth-2405.19190" aria-labelledby="oth-2405.19190">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Reconstructing the general 2HDM charged Higgs boson at the LHC
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Hou,+W">Wei-Shu Hou</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Krab,+M">Mohamed Krab</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          v2: 5 pages, 5 figures, matches version accepted for publication in PRD
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>
+        </div>
+
+        <p class='mathjax'>
+          We study the discovery prospects for a charged Higgs boson via the $b g\to c H^- \to c \bar t b$ process at the Large Hadron Collider (LHC). Focusing on the general Two Higgs Doublet Model (G2HDM) that possesses extra Yukawa couplings, the process is controlled by extra top couplings $\rho_{tc}$ and $\rho_{tt}$, which can drive electroweak baryogenesis (EWBG) to account for the baryon asymmetry of the Universe (BAU). We propose benchmark points (BPs) and demonstrate that evidence could emerge at 14 TeV LHC and luminosity of 300 fb$^{-1}$, with discovery potential at 600 fb$^{-1}$.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item48'>[48]</a>
+      <a href ="/abs/2406.01105" title="Abstract" id="2406.01105">
+        arXiv:2406.01105
+      </a>
+          (replaced)
+
+        [<a href="/pdf/2406.01105" title="Download PDF" id="pdf-2406.01105" aria-labelledby="pdf-2406.01105">pdf</a>, <a href="https://arxiv.org/html/2406.01105v2" title="View HTML" id="html-2406.01105" aria-labelledby="html-2406.01105" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2406.01105" title="Other formats" id="oth-2406.01105" aria-labelledby="oth-2406.01105">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Transition from the shadow to reflective scattering
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Troshin,+S">S.M. Troshin</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Tyurin,+N">N.E. Tyurin</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          9 pages, extended Introduction, accepted by Physics Letters B
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>
+        </div>
+
+        <p class='mathjax'>
+          We consider transition from shadow to relective scattering mode and behavior of the amplitude and cross--sections of hadron interactions in the both modes.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item49'>[49]</a>
+      <a href ="/abs/2406.19004" title="Abstract" id="2406.19004">
+        arXiv:2406.19004
+      </a>
+          (replaced)
+
+        [<a href="/pdf/2406.19004" title="Download PDF" id="pdf-2406.19004" aria-labelledby="pdf-2406.19004">pdf</a>, <a href="https://arxiv.org/html/2406.19004v2" title="View HTML" id="html-2406.19004" aria-labelledby="html-2406.19004" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2406.19004" title="Other formats" id="oth-2406.19004" aria-labelledby="oth-2406.19004">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Investigating a new neutral heavy gauge boson within the mono-Z$^{\prime}$ model via simulated pp collisions at $\sqrt{s}$ = 14 TeV at the HL-LHC
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=H.,+A+M+H">Ali Muhammad H. H.</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=El-dahshan,+E+A">El-sayed A. El-dahshan</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Elgammal,+S">S. Elgammal</a></div>
+
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>
+        </div>
+
+        <p class='mathjax'>
+          In this study, we aim to explore the potential for generating events related to dark matter (DM) in conjunction with a neutral heavy gauge boson (Z$^{\prime}$) decaying leptonically during proton-proton collisions at the Large Hadron Collider (LHC). These collisions occur at a center-of-mass energy of $\sqrt{s}$ = 14 TeV, with a high integrated luminosity equivalent to 1000 fb$^{-1}$. Our analysis involves interpreting the outcomes through Monte Carlo simulation of the effective field theory (EFT) framework. If no new physics is detected, we establish constraints on various parameters within the EFT context, such as the scenario cutoff scale ($\Lambda$) and the Z$^{\prime}$ mass.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item50'>[50]</a>
+      <a href ="/abs/2406.19456" title="Abstract" id="2406.19456">
+        arXiv:2406.19456
+      </a>
+          (replaced)
+
+        [<a href="/pdf/2406.19456" title="Download PDF" id="pdf-2406.19456" aria-labelledby="pdf-2406.19456">pdf</a>, <a href="https://arxiv.org/html/2406.19456v2" title="View HTML" id="html-2406.19456" aria-labelledby="html-2406.19456" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2406.19456" title="Other formats" id="oth-2406.19456" aria-labelledby="oth-2406.19456">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Nonleptonic $B$-meson decays to next-to-next-to-leading order
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Egner,+M">Manuel Egner</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Fael,+M">Matteo Fael</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Sch%C3%B6nwald,+K">Kay Schönwald</a>, <a href="https://arxiv.org/search/hep-ph?searchtype=author&amp;query=Steinhauser,+M">Matthias Steinhauser</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          v2: ref. added; numerical values in CKM-suppressed contribution and fig.10 updated; conclusions unchanged
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Phenomenology (hep-ph)</span>
+        </div>
+
+        <p class='mathjax'>
+          We compute next-to-next-to-leading order QCD corrections to the partonic processes $b\to c \bar{u} d$ and $b\to c \bar{c} s$, which constitute the dominant decay channels in standard model predictions for $B$-meson lifetimes within the heavy quark expansion. We consider the contribution from the four-quark operators $O_1$ and $O_2$ in the $\Delta B =1$ effective Hamiltonian. The decay rates are obtained from the imaginary parts of four-loop propagator-type diagrams. We compute the corresponding master integrals using the &#34;expand and match&#34; approach which provides semi-analytic results for the physical charm and bottom quark masses. We show that the dependence of the decay rate on the renormalization scale is significantly reduced after including the next-to-next-to-leading order corrections. Furthermore, we compute next-to-next-to-leading order corrections to the Cabibbo-Kobayashi-Maskawa-suppressed decay channels $b \to u \bar c s$ and $b \to u \bar u d$.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item51'>[51]</a>
+      <a href ="/abs/2208.05157" title="Abstract" id="2208.05157">
+        arXiv:2208.05157
+      </a>
+          (replaced)
+
+        [<a href="/pdf/2208.05157" title="Download PDF" id="pdf-2208.05157" aria-labelledby="pdf-2208.05157">pdf</a>, <a href="https://arxiv.org/html/2208.05157v4" title="View HTML" id="html-2208.05157" aria-labelledby="html-2208.05157" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2208.05157" title="Other formats" id="oth-2208.05157" aria-labelledby="oth-2208.05157">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          An improved method to access initial states in relativistic heavy-ion collisions
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/nucl-ex?searchtype=author&amp;query=Bhatta,+S">Somadutta Bhatta</a>, <a href="https://arxiv.org/search/nucl-ex?searchtype=author&amp;query=Bairathi,+V">Vipul Bairathi</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          14 pages, 6 figures
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">Nuclear Experiment (nucl-ex)</span>; High Energy Physics - Phenomenology (hep-ph); Nuclear Theory (nucl-th)
+        </div>
+
+        <p class='mathjax'>
+          Observables in heavy-ion collisions are generally categorized into centralities, which reflect an average over events within a range of impact parameter including a wide variety of initial state configurations. A multiple binning method using spectator neutrons within each centrality has been previously shown to provide access to events with rare initial state conditions. This work suggests an improvement in quantifying the difference between standard centrality and spectator neutron binning towards accessing the initial state properties. A selection of events with higher initial state density at fixed participating nucleon number was observed to result in larger final state particle production and smaller elliptic flow. The relative difference between observables in centrality and spectator binning shows reduced sensitivity for the observables dominated by impact parameter fluctuations in initial state such as triangular flow. This property makes the spectator binning method a good candidate to separate geometric contributions from random fluctuations in initial state towards final state observables.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item52'>[52]</a>
+      <a href ="/abs/2302.11772" title="Abstract" id="2302.11772">
+        arXiv:2302.11772
+      </a>
+          (replaced)
+
+        [<a href="/pdf/2302.11772" title="Download PDF" id="pdf-2302.11772" aria-labelledby="pdf-2302.11772">pdf</a>, <a href="/format/2302.11772" title="Other formats" id="oth-2302.11772" aria-labelledby="oth-2302.11772">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Elliptic flow of identified hadrons in Au+Au collisions at $E_{lab} = 35\mathrm{~A~GeV}$ using the PHSD model
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/nucl-ex?searchtype=author&amp;query=Towseef,+B">B. Towseef</a>, <a href="https://arxiv.org/search/nucl-ex?searchtype=author&amp;query=Farooq,+M">M. Farooq</a>, <a href="https://arxiv.org/search/nucl-ex?searchtype=author&amp;query=Bairathi,+V">V. Bairathi</a>, <a href="https://arxiv.org/search/nucl-ex?searchtype=author&amp;query=Waseem,+B">B. Waseem</a>, <a href="https://arxiv.org/search/nucl-ex?searchtype=author&amp;query=Kabana,+S">S. Kabana</a>, <a href="https://arxiv.org/search/nucl-ex?searchtype=author&amp;query=Ahmad,+S">S. Ahmad</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          14 pages, 9 figures
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">Nuclear Experiment (nucl-ex)</span>; High Energy Physics - Phenomenology (hep-ph); Nuclear Theory (nucl-th)
+        </div>
+
+        <p class='mathjax'>
+          We present elliptic flow ($v_2$) of identified hadrons at mid-rapidity ($|y| &lt; 1.0$) in Au+Au collisions at $E_{lab} = 35\mathrm{~A~GeV}$ using the Parton Hadron String Dynamics (PHSD) model. Transverse momentum ($p_\mathrm{T}$) dependence of identified hadron $v_2$ in minimum bias (0-80%) and three different centrality intervals (0-10%, 10-40%, and 40-80%) are presented. A clear centrality dependence of $v_2(p_\mathrm{T})$ is observed for particles and anti-particles in Au+Au collisions at $E_{lab} = 35\mathrm{~A~GeV}$. We also present $p_\mathrm{T}$ dependence of $v_2$ difference ($\mathrm{\Delta} v_2$) between particles and corresponding antiparticles. A significant difference in $v_2$ values for baryons and anti-baryons is observed. The number of constituent quark (NCQ) scaling of $v_2$ is discussed in Au+Au collisions at $E_{lab} = 35\mathrm{~A~GeV}$. We also present ratio of $v_2(p_\mathrm{T})$ between the HSD and PHSD modes to explore the effect of hadronic and partonic interactions in the medium. We observe higher $v_2$ in PHSD mode than the HSD mode, which suggests the formation of partonic medium in Au+Au collisions at $E_{lab} = 35\mathrm{~A~GeV}$. These predictions are useful for the interpretation of data measured in Beam Energy Scan (BES) program at RHIC and will be useful for the future Compressed Baryonic Matter (CBM) experiment at the Facility for Antiproton and Ion Research (FAIR).
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item53'>[53]</a>
+      <a href ="/abs/2303.07358" title="Abstract" id="2303.07358">
+        arXiv:2303.07358
+      </a>
+          (replaced)
+
+        [<a href="/pdf/2303.07358" title="Download PDF" id="pdf-2303.07358" aria-labelledby="pdf-2303.07358">pdf</a>, <a href="/format/2303.07358" title="Other formats" id="oth-2303.07358" aria-labelledby="oth-2303.07358">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Extremal Kerr black holes as amplifiers of new physics
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-th?searchtype=author&amp;query=Horowitz,+G+T">Gary T. Horowitz</a>, <a href="https://arxiv.org/search/hep-th?searchtype=author&amp;query=Kolanowski,+M">Maciej Kolanowski</a>, <a href="https://arxiv.org/search/hep-th?searchtype=author&amp;query=Remmen,+G+N">Grant N. Remmen</a>, <a href="https://arxiv.org/search/hep-th?searchtype=author&amp;query=Santos,+J+E">Jorge E. Santos</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          6 pages (+ 4 pages supplementary material), v2 matches published version, v3 contains an added note about parity-odd terms
+        </div>
+
+        <div class='list-journal-ref'><span class='descriptor'>Journal-ref:</span>
+          Phys. Rev. Lett. 131, 091402 (2023), Editors&#39; Suggestion
+        </div>
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Theory (hep-th)</span>; High Energy Astrophysical Phenomena (astro-ph.HE); General Relativity and Quantum Cosmology (gr-qc); High Energy Physics - Phenomenology (hep-ph)
+        </div>
+
+        <p class='mathjax'>
+          We show that extremal Kerr black holes are sensitive probes of new physics. Stringy or quantum corrections to general relativity are expected to generate higher-curvature terms in the gravitational action. We show that in the presence of these terms, asymptotically flat extremal rotating black holes have curvature singularities on their horizon. Furthermore, near-extremal black holes can have large yet finite tidal forces for infalling observers. In addition, we consider five-dimensional extremal charged black holes and show that higher-curvature terms can have a large effect on the horizon geometry.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item54'>[54]</a>
+      <a href ="/abs/2312.13197" title="Abstract" id="2312.13197">
+        arXiv:2312.13197
+      </a>
+          (replaced)
+
+        [<a href="/pdf/2312.13197" title="Download PDF" id="pdf-2312.13197" aria-labelledby="pdf-2312.13197">pdf</a>, <a href="https://arxiv.org/html/2312.13197v2" title="View HTML" id="html-2312.13197" aria-labelledby="html-2312.13197" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2312.13197" title="Other formats" id="oth-2312.13197" aria-labelledby="oth-2312.13197">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Photons from neutrinos: the gamma ray echo of a supernova neutrino burst
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Lunardini,+C">Cecilia Lunardini</a>, <a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Loeffler,+J">Joshua Loeffler</a>, <a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Mukhopadhyay,+M">Mainak Mukhopadhyay</a>, <a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Hurley,+M+J">Matthew J. Hurley</a>, <a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Farag,+E">Ebraheem Farag</a>, <a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Timmes,+F+X">F. X. Timmes</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          10 pages, 5 figures and 1 table. Description of the microphysics has been expanded; minor edits were made for clarity. This version matches the one to be published in the Astrophysical Journal
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Astrophysical Phenomena (astro-ph.HE)</span>; High Energy Physics - Phenomenology (hep-ph); Nuclear Theory (nucl-th)
+        </div>
+
+        <p class='mathjax'>
+          When a star undergoes core collapse, a vast amount of energy is released in a ~10 s long burst of neutrinos of all species. Inverse beta decay in the star&#39;s hydrogen envelope causes an electromagnetic cascade which ultimately results in a flare of gamma rays - an &#34;echo&#34; of the neutrino burst - at the characteristic energy of 0.511 MeV. We study the phenomenology and detectability of this flare. Its luminosity curve is characterized by a fast, seconds-long, rise and an equally fast decline, with a minute- or hour-long plateau in between. For a near-Earth star (distance D&lt;1 kpc) the echo will be observable at near future gamma ray telescopes with an effective area of 10^3 cm^2 or larger. Its observation will inform us on the envelope size and composition. In conjunction with the direct detection of the neutrino burst, it will also give information on the neutrino emission away from the line of sight and will enable tests of neutrino propagation effects between the stellar surface and Earth.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item55'>[55]</a>
+      <a href ="/abs/2401.14419" title="Abstract" id="2401.14419">
+        arXiv:2401.14419
+      </a>
+          (replaced)
+
+        [<a href="/pdf/2401.14419" title="Download PDF" id="pdf-2401.14419" aria-labelledby="pdf-2401.14419">pdf</a>, <a href="https://arxiv.org/html/2401.14419v2" title="View HTML" id="html-2401.14419" aria-labelledby="html-2401.14419" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2401.14419" title="Other formats" id="oth-2401.14419" aria-labelledby="oth-2401.14419">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Constraining the mass of fermionic dark matter from its feeble interaction with hadronic matter via dark mediators in neutron stars
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Guha,+A">Atanu Guha</a>, <a href="https://arxiv.org/search/astro-ph?searchtype=author&amp;query=Sen,+D">Debashree Sen</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          $k_F^χ$ = 0.06 GeV has been corrected to $k_F^χ$ = 0.07 GeV in all of the occurrences. TABLE III and Figure 10 have also been corrected in version 2
+        </div>
+
+        <div class='list-journal-ref'><span class='descriptor'>Journal-ref:</span>
+          Phys. Rev. D, Vol. 109, No. 4 (2024)
+        </div>
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Astrophysical Phenomena (astro-ph.HE)</span>; High Energy Physics - Phenomenology (hep-ph); Nuclear Theory (nucl-th)
+        </div>
+
+        <p class='mathjax'>
+          Considering ten well-known relativistic mean field models, we invoke feeble interaction between hadronic matter and fermionic dark matter (DM) $\chi$ via new physics scalar ($\phi$) and vector ($\xi$) mediators in neutron star core, thereby forming DM admixed neutron stars (DMANSs). The chosen masses of the DM fermion ($m_{\chi}$) and the mediators ($m_{\phi}$ and $m_{\xi}$) are consistent with the self-interaction constraint from Bullet cluster while their respective couplings ($y_{\phi}$ and $y_{\xi}$) are also constrained by the present day relic abundance. Assuming that both $\phi$ and $\xi$ contribute equally to the relic abundance, we compute the equation of state of the DMANSs and consequently their structural properties. We found that for a particular (constant) DM density, the presence of lighter DM results in more massive DMANSs with larger radius. In the light of the various recent constraints like those from the massive pulsar PSR J0740+6620, the gravitational wave (GW170817) data and the results of NICER experiments for PSR J0030+0451 and PSR J0740+6620, we provide a bound on $m_{\chi}$ within the framework of the present work as $m_{\chi}\approx$ (0.1 $-$ 30) GeV for a wide range of fixed DM Fermi momenta $k_F^{\chi}$=(0.01 $-$ 0.07) GeV. In the case of the hadronic models that yield larger radii corresponding to the low mass neutron stars in the no-DM scenario, interaction with comparatively heavier DM fermion is necessary in order to ensure that the DMANSs obtained with such models satisfy the radius constraints from both GW170817 and NICER data for PSR J0030+0451.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item56'>[56]</a>
+      <a href ="/abs/2402.14513" title="Abstract" id="2402.14513">
+        arXiv:2402.14513
+      </a>
+          (replaced)
+
+        [<a href="/pdf/2402.14513" title="Download PDF" id="pdf-2402.14513" aria-labelledby="pdf-2402.14513">pdf</a>, <a href="https://arxiv.org/html/2402.14513v2" title="View HTML" id="html-2402.14513" aria-labelledby="html-2402.14513" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2402.14513" title="Other formats" id="oth-2402.14513" aria-labelledby="oth-2402.14513">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Chern-Simons gravity and PT Symmetry
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-th?searchtype=author&amp;query=Mavromatos,+N+E">Nick E. Mavromatos</a>, <a href="https://arxiv.org/search/hep-th?searchtype=author&amp;query=Sarkar,+S">Sarben Sarkar</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          20 pages, revtex, 2 figures incorporated. Amended version accepted for publication in Physical Review D. Augmented abstract, modified structure in introduction (subsections A and B for better guidance of the reader), better links between various sections. Addition on potential phenomenological tests in the final part of conclusions section. References added. No effects on conclusions
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Theory (hep-th)</span>; General Relativity and Quantum Cosmology (gr-qc); High Energy Physics - Phenomenology (hep-ph)
+        </div>
+
+        <p class='mathjax'>
+          This paper considers the possibility that, starting from a relativistic Hermitian quantum field theory in the ultraviolet (UV) regime, and applying a non-perturbative renormalization-group (RG) flow, we arrive at a situation where there are infrared (IR) singularities in the RG flow of couplings. The latter can be resolved by assuming that the theory can have a phase described by a related non-Hermitian PT-symmetric modification in the IR. The UV-to-IR (Hermitian-to-PT-symmetric) transition can occur in a single renormalization-group flow of the pertinent couplings, as demonstrated in concrete examples. When embedded in a gravitational setting such a transition can lead to a repulsive gravity phase. If there is a RG flow to a repulsive PT -symmetric gravity, then this would be an alternative to dark energy. The discussion here is presented in the context of a string-inspired Chern-Simons gravitational effective action, which involves a pseudoscalar (axion-like) field coupled to Abelian gauge fields and gravity; it may also hold more generally in gravity with torsion. The validity of such a scenario in realistic theories might alleviate the need for de Sitter phases in the current epoch of cosmological evolution, thus avoiding their associated conceptual and technical complications.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item57'>[57]</a>
+      <a href ="/abs/2403.10619" title="Abstract" id="2403.10619">
+        arXiv:2403.10619
+      </a>
+          (replaced)
+
+        [<a href="/pdf/2403.10619" title="Download PDF" id="pdf-2403.10619" aria-labelledby="pdf-2403.10619">pdf</a>, <a href="https://arxiv.org/html/2403.10619v2" title="View HTML" id="html-2403.10619" aria-labelledby="html-2403.10619" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2403.10619" title="Other formats" id="oth-2403.10619" aria-labelledby="oth-2403.10619">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Simulating quantum field theories on continuous-variable quantum computers
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/quant-ph?searchtype=author&amp;query=Abel,+S">Steven Abel</a>, <a href="https://arxiv.org/search/quant-ph?searchtype=author&amp;query=Spannowsky,+M">Michael Spannowsky</a>, <a href="https://arxiv.org/search/quant-ph?searchtype=author&amp;query=Williams,+S">Simon Williams</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          22 pages, 13 figures
+        </div>
+
+        <div class='list-journal-ref'><span class='descriptor'>Journal-ref:</span>
+          Phys. Rev. A 110 (2024) 1, 012607
+        </div>
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">Quantum Physics (quant-ph)</span>; High Energy Physics - Phenomenology (hep-ph); High Energy Physics - Theory (hep-th)
+        </div>
+
+        <p class='mathjax'>
+          We delve into the use of photonic quantum computing to simulate quantum mechanics and extend its application towards quantum field theory. We develop and prove a method that leverages this form of Continuous-Variable Quantum Computing (CVQC) to reproduce the time evolution of quantum-mechanical states under arbitrary Hamiltonians, and we demonstrate the method&#39;s remarkable efficacy with various potentials. Our method centres on constructing an evolver-state, a specially prepared quantum state that induces the desired time-evolution on the target state. This is achieved by introducing a non-Gaussian operation using a measurement-based quantum computing approach, enhanced by machine learning. Furthermore, we propose a framework in which these methods can be extended to encode field theories in CVQC without discretising the field values, thus preserving the continuous nature of the fields. This opens new avenues for quantum computing applications in quantum field theory.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item58'>[58]</a>
+      <a href ="/abs/2405.06256" title="Abstract" id="2405.06256">
+        arXiv:2405.06256
+      </a>
+          (replaced)
+
+        [<a href="/pdf/2405.06256" title="Download PDF" id="pdf-2405.06256" aria-labelledby="pdf-2405.06256">pdf</a>, <a href="https://arxiv.org/html/2405.06256v2" title="View HTML" id="html-2405.06256" aria-labelledby="html-2405.06256" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2405.06256" title="Other formats" id="oth-2405.06256" aria-labelledby="oth-2405.06256">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Reconstructing generalised parton distributions from the lattice off-forward Compton amplitude
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-lat?searchtype=author&amp;query=Hannaford-Gunn,+A">A. Hannaford-Gunn</a>, <a href="https://arxiv.org/search/hep-lat?searchtype=author&amp;query=Can,+K+U">K. U. Can</a>, <a href="https://arxiv.org/search/hep-lat?searchtype=author&amp;query=Crawford,+J+A">J. A. Crawford</a>, <a href="https://arxiv.org/search/hep-lat?searchtype=author&amp;query=Horsley,+R">R. Horsley</a>, <a href="https://arxiv.org/search/hep-lat?searchtype=author&amp;query=Rakow,+P+E+L">P. E. L. Rakow</a>, <a href="https://arxiv.org/search/hep-lat?searchtype=author&amp;query=Schierholz,+G">G. Schierholz</a>, <a href="https://arxiv.org/search/hep-lat?searchtype=author&amp;query=St%C3%BCben,+H">H. Stüben</a>, <a href="https://arxiv.org/search/hep-lat?searchtype=author&amp;query=Young,+R+D">R. D. Young</a>, <a href="https://arxiv.org/search/hep-lat?searchtype=author&amp;query=Zanotti,+J+M">J. M. Zanotti</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          20 pages, 14 figures. Minor updates to text. Version to appear in Phys. Rev. D
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Lattice (hep-lat)</span>; High Energy Physics - Phenomenology (hep-ph); Nuclear Theory (nucl-th)
+        </div>
+
+        <p class='mathjax'>
+          We present a determination of the structure functions of the off-forward Compton amplitude $\mathcal{H}_1$ and $\mathcal{E}_1$ from the Feynman-Hellmann method in lattice QCD. At leading twist, these structure functions give access to the generalised parton distributions (GPDs) $H$ and $E$, respectively. This calculation is performed for an unphysical pion mass of $m_{\pi}=412\;\text{MeV}$ and four values of the soft momentum transfer, $t\approx 0, -0.3, -0.6, -1.1\;\text{GeV}^2$, all at a hard momentum scale of $\bar{Q}^2\approx 5\;\text{GeV}^2$. Using these results, we test various methods to determine properties of the real-time scattering amplitudes and GPDs: (1) we fit their Mellin moments, and (2) we use a simple GPD ansatz to reconstruct the entire distribution. Our final results show promising agreement with phenomenology and other lattice results, and highlight specific systematics in need of control.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item59'>[59]</a>
+      <a href ="/abs/2406.16327" title="Abstract" id="2406.16327">
+        arXiv:2406.16327
+      </a>
+          (replaced)
+
+        [<a href="/pdf/2406.16327" title="Download PDF" id="pdf-2406.16327" aria-labelledby="pdf-2406.16327">pdf</a>, <a href="https://arxiv.org/html/2406.16327v2" title="View HTML" id="html-2406.16327" aria-labelledby="html-2406.16327" rel="noopener noreferrer" target="_blank">html</a>, <a href="/format/2406.16327" title="Other formats" id="oth-2406.16327" aria-labelledby="oth-2406.16327">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Brane Profiles of Non-Supersymmetric Strings
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/hep-th?searchtype=author&amp;query=Mourad,+J">J. Mourad</a> (APC, U. Paris Cité), <a href="https://arxiv.org/search/hep-th?searchtype=author&amp;query=Raucci,+S">S. Raucci</a>, <a href="https://arxiv.org/search/hep-th?searchtype=author&amp;query=Sagnotti,+A">A. Sagnotti</a> (Scuola Normale Superiore and INFN, Pisa)</div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          46 pages, LaTeX; corrected some typos and a sign in eq.(4.10), which affects section 4.3. Some of the branes have different behaviors, but the main conclusions are unchanged
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">High Energy Physics - Theory (hep-th)</span>; General Relativity and Quantum Cosmology (gr-qc); High Energy Physics - Phenomenology (hep-ph); Mathematical Physics (math-ph)
+        </div>
+
+        <p class='mathjax'>
+          We connect the indications of 2D CFT for branes in non-supersymmetric strings to actual spacetime profiles, taking the bulk tadpole potentials into account. We find exact solutions for the uncharged branes that spread in the internal intervals of Dudas-Mourad vacua for non-tachyonic orientifolds and heterotic strings. These solutions involve suitable dressings of the uncharged branes of the nine-dimensional tadpole-free theory. Similar exact results for uncharged branes that are transverse to the internal space, or for charged branes, appear more challenging. Nevertheless, we identify their large-distance behavior, which is determined by linearized equations, and show that it is compatible with the CFT analysis in all expected cases. We also draw some indications on the leading back-reaction of the form-fields.
+        </p>
+      </div>
+    </dd>
+    <dt>
+      <a name='item60'>[60]</a>
+      <a href ="/abs/2407.06407" title="Abstract" id="2407.06407">
+        arXiv:2407.06407
+      </a>
+          (replaced)
+
+        [<a href="/pdf/2407.06407" title="Download PDF" id="pdf-2407.06407" aria-labelledby="pdf-2407.06407">pdf</a>, <a href="/format/2407.06407" title="Other formats" id="oth-2407.06407" aria-labelledby="oth-2407.06407">other</a>]
+    </dt>
+    <dd>
+      <div class='meta'>
+        <div class='list-title mathjax'><span class='descriptor'>Title:</span>
+          Electron scattering cross sections for 6,7Li and 7Be nuclei within the unified electroweak theory
+        </div>
+        <div class='list-authors'><a href="https://arxiv.org/search/nucl-th?searchtype=author&amp;query=Truong,+V+M">Vo Minh Truong</a>, <a href="https://arxiv.org/search/nucl-th?searchtype=author&amp;query=Hung,+N+Q">Nguyen Quang Hung</a></div>
+
+        <div class='list-comments mathjax'><span class='descriptor'>Comments:</span>
+          14 pages, 3 figures, 2 tables
+        </div>
+
+
+        <div class='list-subjects'><span class='descriptor'>Subjects:</span>
+          <span class="primary-subject">Nuclear Theory (nucl-th)</span>; High Energy Physics - Phenomenology (hep-ph)
+        </div>
+
+        <p class='mathjax'>
+          The present study employs the multipole expansion within the unified electroweak theory to investigate the electron scattering cross sections for 6,7Li and 7Be nuclei. The multipole form factors presented in the expressions of the cross sections are directly calculated based on the many-particle shell model and fractional parentage coefficients without using any approximations. The results obtained indicate that the conventional impulse approximation can be applied to the electron-nucleus scattering only when the energy of incident electrons does not exceed twice the nucleon mass. In addition, the quasi-elastic scattering cross section of 7Li in the excitation from its ground state to the nearest excited state and that of elastic scattering in the ground state are independently treated, whereas they have not been separately measured in experiments. The calculated scattering cross sections using the V-A structure agree reasonably well with the available experimental data at low (MeV) energies and provide predictive information at high (GeV) energies. The scattering cross sections are found to rapidly decrease in all cases with increasing the incident electron energy and scattering angle. In particular, at the energies of hundreds of GeV and higher, there are only the forward scattering processes. Furthermore, by comparing the elastic cross sections of three investigated nuclei at a certain energy and scattering angle, the rule that the nuclear size is proportional to the number of nucleons is clearly shown.
+        </p>
+      </div>
+    </dd>
+</dl>
+
+
+
+
+      <div class='paging'>Total of 60 entries 
+    </div>
+    <div class='morefewer'>Showing up to 2000 entries per page:
+          <a href=/list/hep-ph/new?skip=0&amp;show=1000>
+      fewer</a>
+ |
+          <span style="color: #454545">more</span>
+ |
+          <span style="color: #454545">all</span>
+
+    </div>
+
+</div>
+</div>      </div>
+    </main>
+
+    <footer style="clear: both;">
+      <div class="columns is-desktop" role="navigation" aria-label="Secondary" style="margin: -0.75em -0.75em 0.75em -0.75em">
+        <!-- Macro-Column 1 -->
+        <div class="column" style="padding: 0;">
+          <div class="columns">
+            <div class="column">
+              <ul style="list-style: none; line-height: 2;">
+                <li><a href="https://info.arxiv.org/about">About</a></li>
+                <li><a href="https://info.arxiv.org/help">Help</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <ul style="list-style: none; line-height: 2;">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon filter-black" role="presentation"><title>contact arXiv</title><desc>Click here to contact arXiv</desc><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg>
+                  <a href="https://info.arxiv.org/help/contact.html"> Contact</a>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon filter-black" role="presentation"><title>subscribe to arXiv mailings</title><desc>Click here to subscribe</desc><path d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"/></svg>
+                  <a href="https://info.arxiv.org/help/subscribe"> Subscribe</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End Macro-Column 1 -->
+        <!-- Macro-Column 2 -->
+        <div class="column" style="padding: 0;">
+          <div class="columns">
+            <div class="column">
+              <ul style="list-style: none; line-height: 2;">
+                <li><a href="https://info.arxiv.org/help/license/index.html">Copyright</a></li>
+                <li><a href="https://info.arxiv.org/help/policies/privacy_policy.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="column sorry-app-links">
+              <ul style="list-style: none; line-height: 2;">
+                <li><a href="https://info.arxiv.org/help/web_accessibility.html">Web Accessibility Assistance</a></li>
+                <li>
+                  <p class="help">
+                    <a class="a11y-main-link" href="https://status.arxiv.org" target="_blank">arXiv Operational Status <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="icon filter-dark_grey" role="presentation"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg></a><br>
+                    Get status notifications via
+                    <a class="is-link" href="https://subscribe.sorryapp.com/24846f03/email/new" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon filter-black" role="presentation"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg>email</a>
+                    or <a class="is-link" href="https://subscribe.sorryapp.com/24846f03/slack/new" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon filter-black" role="presentation"><path d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z"/></svg>slack</a>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div> <!-- end MetaColumn 2 -->
+        <!-- End Macro-Column 2 -->
+      </div>
+    </footer>
+  </div>
+
+  <script src="/static/base/1.0.1/js/member_acknowledgement.js"></script>
+
+</body>
+
+</html>
