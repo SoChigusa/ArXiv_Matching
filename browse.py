@@ -5,22 +5,23 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 from urllib.parse import urljoin, urlparse, quote
+import json
 import requests
 import time
 
 
+# Function to check if a URL is relative
 def is_relative(url):
-    # Function to check if a URL is relative
     return not bool(urlparse(url).netloc)
 
 
+# Function to display HTML content in Chrome
 def display_html_in_browser(html_content, driver):
-    # Function to display HTML content in Chrome
     driver.get("data:text/html;charset=utf-8," + html_content)
 
 
+# Function to wait for user interaction
 def wait_for_response():
-    # Function to wait for user interaction
     from http.server import BaseHTTPRequestHandler, HTTPServer
 
     class RequestHandler(BaseHTTPRequestHandler):
@@ -99,10 +100,36 @@ with open("components/template.html", "r", encoding="utf-8") as template_file:
 with open("components/styles.css", "r", encoding="utf-8") as template_file:
     styles_css = template_file.read()
 
+
+# Function to extract paper information
+def extract_paper_info(paper_dt, paper_dd):
+    # Extract the title
+    title_div = paper_dd.find('div', class_='list-title mathjax')
+    title = title_div.get_text(strip=True).replace(
+        title_div.span.get_text(strip=True), '')
+
+    # Extract the authors
+    authors_div = paper_dd.find('div', class_='list-authors')
+    authors = [a.get_text(strip=True) for a in authors_div.find_all('a')]
+
+    # Extract the abstract
+    abstract_p = paper_dd.find('p', class_='mathjax')
+    abstract = abstract_p.get_text(strip=True)
+
+    return {'title': title, 'authors': authors, 'abstract': abstract}
+
+
+# List to store extracted information
+extracted_info = []
+
 # Generate individual files for each paper and display in Chrome
 for i in range(0, len(papers), 2):
     paper_dt = papers[i]
     paper_dd = papers[i + 1]
+
+    # Extract information from the paper
+    paper_info = extract_paper_info(paper_dt, paper_dd)
+
     # Extracting serial number from 'name' attribute
     serial_number = paper_dt.a['name'][4:]
     html_content = f"<html><body>{str(paper_dt)}{str(paper_dd)}</body></html>"
@@ -113,12 +140,13 @@ for i in range(0, len(papers), 2):
     display_html_in_browser(full_html_content, driver)
 
     # Wait for user response before proceeding
-    response = wait_for_response()
-    if response == "like":
-        print("Like")
-    elif response == "dislike":
-        print("Dislike")
+    paper_info["evaluation"] = wait_for_response()
+    extracted_info.append(paper_info)
     continue  # Continue to the next paper
 
 # Close the driver
 driver.quit()
+
+# Save extracted information to a JSON file
+with open("data/matching_info_raw.json", "w", encoding="utf-8") as json_file:
+    json.dump(extracted_info, json_file, ensure_ascii=False, indent=4)
