@@ -4,35 +4,23 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
-from urllib.parse import urljoin, urlparse, quote
+from urllib.parse import urljoin, urlparse
+import os
+import random
+import string
+import time
 import json
 import requests
-import time
+
+
+# Function to generate a user ID
+def generate_user_id():
+    return 'user-' + ''.join(random.choices(string.ascii_letters + string.digits, k=9))
 
 
 # Function to check if a URL is relative
 def is_relative(url):
     return not bool(urlparse(url).netloc)
-
-
-# Function to display HTML content in Chrome
-def display_html_in_browser(html_content, driver):
-    driver.get("data:text/html;charset=utf-8," + html_content)
-
-
-# Function to wait for user interaction
-def wait_for_response():
-    from http.server import BaseHTTPRequestHandler, HTTPServer
-
-    class RequestHandler(BaseHTTPRequestHandler):
-        def do_GET(self):
-            self.send_response(200)
-            self.end_headers()
-            self.server.response = self.path[1:]
-
-    server = HTTPServer(('localhost', 8000), RequestHandler)
-    server.handle_request()
-    return server.response
 
 
 # Path to your ChromeDriver
@@ -53,12 +41,6 @@ chrome_options.add_argument("user-data-dir=/tmp/chrome_user_data")
 
 # Set binary location to existing Chrome application (adjust path if necessary)
 chrome_options.binary_location = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-
-# Disable dock icon creation (for macOS)
-# chrome_options.add_argument("--no-startup-window")
-
-# Optionally use headless mode
-# chrome_options.add_argument("--headless")
 
 # Initialize the Chrome driver
 service = ChromeService(executable_path=chrome_driver_path)
@@ -94,12 +76,6 @@ else:
 # Extract all <dt> and <dd> elements
 papers = soup.find_all(['dt', 'dd'])
 
-# Load the HTML and CSS template from the external file
-with open("components/template.html", "r", encoding="utf-8") as template_file:
-    html_template = template_file.read()
-with open("components/styles.css", "r", encoding="utf-8") as template_file:
-    styles_css = template_file.read()
-
 
 # Function to extract paper information
 def extract_paper_info(paper_dt, paper_dd):
@@ -119,34 +95,71 @@ def extract_paper_info(paper_dt, paper_dd):
     return {'title': title, 'authors': authors, 'abstract': abstract}
 
 
-# List to store extracted information
+# Generate list of paper information
 extracted_info = []
-
-# Generate individual files for each paper and display in Chrome
+html_data = []
 for i in range(0, len(papers), 2):
     paper_dt = papers[i]
     paper_dd = papers[i + 1]
 
     # Extract information from the paper
     paper_info = extract_paper_info(paper_dt, paper_dd)
+    extracted_info.append(paper_info)
 
     # Extracting serial number from 'name' attribute
     serial_number = paper_dt.a['name'][4:]
-    html_content = f"<html><body>{str(paper_dt)}{str(paper_dd)}</body></html>"
-    full_html_content = quote(html_template.format(
-        styles=styles_css, content=html_content))
+    html_content = f"{str(paper_dt)}{str(paper_dd)}"
 
-    # Display the HTML content in Chrome by refreshing the existing tab
-    display_html_in_browser(full_html_content, driver)
-
-    # Wait for user response before proceeding
-    paper_info["evaluation"] = wait_for_response()
-    extracted_info.append(paper_info)
+    html_data.append(html_content)
     continue  # Continue to the next paper
 
-# Close the driver
+# Generate a user ID
+user_id = generate_user_id()
+
+# Data upload
+url = 'http://localhost:3000/api/upload_html'
+payload = {'userId': user_id, 'html': html_data}
+response = requests.post(url, json=payload)
+print(response.json())
+
+# Open the webpage in Chrome
+page_url = f'http://localhost:3000?userId={user_id}'
+driver.get(page_url)
+
+# Monitor for completion notification
+completed = False
+while not completed:
+    time.sleep(1)  # Adjust the polling interval as needed
+    response = requests.get(
+        f'http://localhost:3000/api/notify_completion?userId={user_id}')
+    data = response.json()
+    if data['status'] == 'completed':
+        completed = True
+
+# Retrieve and print selections
+response = requests.get(
+    f'http://localhost:3000/api/save_selections?userId={user_id}')
+selections = response.json()['selections']
+for e, s in zip(extracted_info, selections):
+    if s == 1:
+        e["evaluation"] = "like"
+    else:
+        e["evaluation"] = "dislike"
+
+# Step 5: Close the browser
 driver.quit()
 
-# Save extracted information to a JSON file
-with open("data/matching_info_raw.json", "w", encoding="utf-8") as json_file:
-    json.dump(extracted_info, json_file, ensure_ascii=False, indent=4)
+# Load existing data from the JSON file
+file_path = "data/matching_info_raw.json"
+if os.path.exists(file_path):
+    with open(file_path, "r", encoding="utf-8") as json_file:
+        existing_data = json.load(json_file)
+else:
+    existing_data = []
+
+# Add new data to the existing data
+existing_data.extend(extracted_info)
+
+# Save updated data back to the JSON file
+with open(file_path, "w", encoding="utf-8") as json_file:
+    json.dump(existing_data, json_file, ensure_ascii=False, indent=4)
