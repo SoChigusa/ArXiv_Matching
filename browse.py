@@ -13,6 +13,11 @@ import json
 import requests
 
 
+# Domain to use
+# domain = "https://arxiv-matching-webapp.vercel.app"
+domain = "http://localhost:3000"
+
+
 # Function to generate a user ID
 def generate_user_id():
     return 'user-' + ''.join(random.choices(string.ascii_letters + string.digits, k=9))
@@ -117,13 +122,13 @@ for i in range(0, len(papers), 2):
 user_id = generate_user_id()
 
 # Data upload
-url = 'http://localhost:3000/api/upload_html'
+url = f'{domain}/api/upload_html'
 payload = {'userId': user_id, 'html': html_data}
 response = requests.post(url, json=payload)
 print(response.json())
 
 # Open the webpage in Chrome
-page_url = f'http://localhost:3000?userId={user_id}'
+page_url = f'{domain}?userId={user_id}'
 driver.get(page_url)
 
 # Monitor for completion notification
@@ -131,20 +136,17 @@ completed = False
 while not completed:
     time.sleep(1)  # Adjust the polling interval as needed
     response = requests.get(
-        f'http://localhost:3000/api/notify_completion?userId={user_id}')
+        f'{domain}/api/notify_completion?userId={user_id}')
     data = response.json()
     if data['status'] == 'completed':
         completed = True
 
 # Retrieve and print selections
 response = requests.get(
-    f'http://localhost:3000/api/save_selections?userId={user_id}')
+    f'{domain}/api/save_selections?userId={user_id}')
 selections = response.json()['selections']
 for e, s in zip(extracted_info, selections):
-    if s == 1:
-        e["evaluation"] = "like"
-    else:
-        e["evaluation"] = "dislike"
+    e["evaluation"] = s
 
 # Step 5: Close the browser
 driver.quit()
