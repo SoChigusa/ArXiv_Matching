@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../paper_matching_webapp"
+		}
+	],
+	"settings": {
+		"html.format.enable": false
+	}
+}

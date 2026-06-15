@@ -14,8 +14,8 @@ import requests
 
 
 # Domain to use
-# domain = "https://arxiv-matching-webapp.vercel.app"
-domain = "http://localhost:3000"
+domain = "https://paper-matching-webapp.vercel.app"
+# domain = "http://localhost:3000"
 
 
 # Function to generate a user ID
